@@ -3,9 +3,13 @@
 .text-shadow {
 	text-shadow: 3px 3px $cyan;
 }
-.text-stroke {
+.text-stroke-rose {
 	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
 		2px 2px 0 $rose;
+}
+.text-stroke-dark {
+	text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
+		2px 2px 0 $dark;
 }
 .text-hero {
 	font-size: 86px;

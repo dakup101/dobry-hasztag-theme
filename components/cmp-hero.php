@@ -3,7 +3,7 @@
         <h1 class=" text-hero font-black leading-tight">
             <span class="text-shadow">Dołącz do<br>naszej akcji</span>
             <br>
-            <span class="text-stroke text-yellow-light">#dobryhasztag</span>
+            <span class="text-stroke-rose text-yellow-light">#dobryhasztag</span>
         </h1>
     </div>
     <div class="col-12 md:col-span-6 pl-20">
