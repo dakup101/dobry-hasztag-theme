@@ -5,7 +5,7 @@
 @layer components {
 	/* Buttons */
 	.btn {
-		@apply w-fit block p-3 text-xl font-archio text-dark bg-rose rounded-xl border-[3px] border-dark relative transition-all duration-150
+		@apply w-fit block py-3 px-5 text-xl font-archio text-dark bg-rose rounded-xl border-[3px] border-dark relative transition-all duration-150
 		hover:translate-x-1.5 hover:translate-y-1.5 hover:bg-cyan;
 	}
 	.btn svg {

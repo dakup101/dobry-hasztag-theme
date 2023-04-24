@@ -10,7 +10,7 @@
                 $menus_count = count($menu['menus']) - 1;
                 $menus_key = 0;
                 foreach($menu["menus"] as $el) : ?>
-                <li class="<?php echo $menus_key < $menus_count ? 'mr-7' : '' ?>">
+                <li class="<?php echo $menus_key < $menus_count ? 'mr-10' : '' ?>">
                     <?php get_template_part( CMP, "btn", array(
                         'content' => $el['title'],
                         'url' => $el['url'],

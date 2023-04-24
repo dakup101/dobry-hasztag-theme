@@ -8,12 +8,12 @@
 ) ) ?>
 
 
-<div class="btn-wrapper <?php echo $btn["class_wrapper"] ? $btn["class_wrapper"] : "" ?>">    
+<div class="btn-wrapper <?php echo $btn["class_wrapper"] ? $btn["class_wrapper"] : "" ?>">
     <?php if ($btn["type"] == "link") : ?>
 
-    <a  href="<?php echo $btn["url"] ?>"
-        rel="<?php echo $btn["rel"] ? $btn["rel"] : "" ?>"
-        class="btn <?php echo $btn["class"] ? $btn["class"] : "" ?>">
+    <a href="<?php echo $btn["url"] ?>"
+       rel="<?php echo $btn["rel"] ? $btn["rel"] : "" ?>"
+       class="btn <?php echo $btn["class"] ? $btn["class"] : "" ?>">
         <?php echo $btn["content"]; ?>
     </a>
 
@@ -25,6 +25,3 @@
 
     <?php endif; ?>
 </div>
-
-
-
