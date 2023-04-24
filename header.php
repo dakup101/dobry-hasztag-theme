@@ -28,7 +28,7 @@
     <?php wp_head() ?>
 </head>
 
-<body <?php body_class() ?>">
+<body <?php body_class("pt-10 relative bg-yellow") ?>>
     <!-- Site Header -->
     <?php get_template_part( CMP, "header" ) ?>
     <!-- Site Main -->

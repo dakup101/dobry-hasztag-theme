@@ -1,5 +1,5 @@
-<header class="container mx-auto">
-    <div class="flex justify-between items-center">
+<header class="absolute top-16 left-0 w-full">
+    <div class="container mx-auto flex justify-between items-center">
         <a href="<?php echo get_home_url() ?>">
             <img src="<?php echo IMG . "logo.png" ?>"
                  alt="#DOBRYHASZTAG"
