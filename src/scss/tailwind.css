@@ -3,7 +3,17 @@
 @tailwind utilities;
 
 @layer components {
+	/* Buttons */
 	.btn {
-		@apply;
+		@apply w-fit block p-3 text-xl font-archio text-dark bg-rose rounded-xl border-[3px] border-dark relative transition-all duration-150
+		hover:translate-x-1.5 hover:translate-y-1.5 hover:bg-cyan;
 	}
+	.btn svg {
+		@apply w-7 h-7 fill-current;
+	}
+	.btn-wrapper {
+		@apply relative w-fit h-fit
+		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:top-1.5 before:left-1.5;
+	}
+	/* Neo */
 }

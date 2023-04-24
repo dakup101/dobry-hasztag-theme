@@ -11,7 +11,8 @@ module.exports = {
             'rose' : '#ff2758',
             'cyan' : '#50d5cd',
             'yellow' : '#f8d247',
-            'yellow-light' : '#fbe66d'
+            'yellow-light' : '#fbe66d',
+            'current' : 'currentColor'
         },
         extend: {
             fontFamily: {
