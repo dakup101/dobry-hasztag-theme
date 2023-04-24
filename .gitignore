@@ -46,3 +46,14 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+
+# Folders
+/node_modules/
+/dist/css/
+/dist/js/
+
+# Files
+/zipper.js
+/.gitattributes
+/package-lock.json
