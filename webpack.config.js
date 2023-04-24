@@ -3,7 +3,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
-    entry: './src/ts/plugin',
+    entry: './src/ts/theme',
     mode: "development",
     watchOptions: {
         poll: true,
