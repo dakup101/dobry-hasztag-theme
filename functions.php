@@ -18,3 +18,6 @@ require_once(FUN . "scripts-styles.php");
 
 // Custom Functions
 require_once(FUN . "get-menu.php");
+
+// ACF
+require_once(FUN . "acf-options.php");
