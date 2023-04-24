@@ -17,7 +17,7 @@
         <?php echo $btn["content"]; ?>
     </a>
 
-    <?php if ($btn["type"] == "button") : ?>
+    <?php elseif ($btn["type"] == "button") : ?>
 
     <button class="btn <?php echo $btn["class"] ? $btn["class"] : "" ?>">
         <?php echo $btn["content"]; ?>
