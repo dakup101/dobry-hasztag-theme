@@ -25,7 +25,7 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class() ?>">
     <!-- Site Header -->
     <?php get_template_part( CMP, "header" ) ?>
     <!-- Site Main -->
