@@ -12,7 +12,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 'sans' : ['Inter', 'sans-serif'], 
-                'sofia' : ['sofia-pro-soft', 'sans-serif']
+                'sofia' : ['sofia-pro-soft', 'sans-serif'],
+                'archio' : ['Archivo Narrow', 'sans-serif']
             }
         }
     },

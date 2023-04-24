@@ -16,6 +16,9 @@
           crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
+    <!-- Archio Narrow Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap"
+          rel="stylesheet">
     <!-- Sofia Pro Soft Font Famili -->
     <link rel="stylesheet"
           href="https://use.typekit.net/zjm1tnj.css">
