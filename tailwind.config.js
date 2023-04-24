@@ -8,6 +8,10 @@ module.exports = {
         colors: {
             'dark': '#222222',
             'white': '#ffffff',
+            'rose' : '#ff2758',
+            'cyan' : '#50d5cd',
+            'yellow' : '#f8d247',
+            'yellow-light' : '#fbe66d'
         },
         extend: {
             fontFamily: {
