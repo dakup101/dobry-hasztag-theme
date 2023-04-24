@@ -52,6 +52,7 @@ wp-config.php
 /node_modules/
 /dist/css/
 /dist/js/
+/.git/
 
 # Files
 /zipper.js
