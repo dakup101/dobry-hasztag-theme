@@ -16,4 +16,15 @@
 		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:top-1.5 before:left-1.5;
 	}
 	/* Neo */
+	.neo-before {
+		@apply relative
+		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:top-1.5 before:left-1.5;
+	}
+	.hero-play {
+		@apply absolute top-0 left-0 w-full h-full flex items-center justify-center text-rose bg-cyan bg-opacity-0 transition-all
+		hover:bg-opacity-50 hover:text-white;
+	}
+	.hero-play svg {
+		@apply fill-current w-full h-auto drop-shadow-lg;
+	}
 }

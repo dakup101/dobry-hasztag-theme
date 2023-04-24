@@ -1,0 +1,12 @@
+@import "./sub/variables";
+
+.text-shadow {
+	text-shadow: 3px 3px $cyan;
+}
+.text-stroke {
+	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
+		2px 2px 0 $rose;
+}
+.text-hero {
+	font-size: 86px;
+}
