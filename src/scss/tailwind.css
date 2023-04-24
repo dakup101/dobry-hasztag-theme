@@ -9,7 +9,7 @@
 		hover:translate-x-1.5 hover:translate-y-1.5 hover:bg-cyan;
 	}
 	.btn svg {
-		@apply w-7 h-7 fill-current;
+		@apply w-5 h-5 fill-current;
 	}
 	.btn-wrapper {
 		@apply relative w-fit h-fit
