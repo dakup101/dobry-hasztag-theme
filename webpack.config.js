@@ -1,6 +1,7 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/ts/theme',
@@ -39,4 +40,7 @@ module.exports = {
         filename: 'theme.js',
         path: path.resolve(__dirname, './dist/js'),
     },
+    plugins: [
+        new Dotenv()
+    ]
 };

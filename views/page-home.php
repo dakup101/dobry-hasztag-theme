@@ -7,6 +7,6 @@ get_header() ?>
     <?php get_template_part( CMP, "hero-after" ) ?>
 </section>
 <section class="container mx-auto px-20 pt-20 bg-yellow-light">
-
+    <?php get_template_part( CMP, "updates" ) ?>
 </section>
 <?php get_footer() ?>
