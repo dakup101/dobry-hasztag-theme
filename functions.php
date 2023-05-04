@@ -19,5 +19,11 @@ require_once(FUN . "scripts-styles.php");
 // Custom Functions
 require_once(FUN . "get-menu.php");
 
+// Post Types
+require_once(FUN . "post-type-tiktok.php");
+require_once(FUN . "post-type-youtube.php");
+require_once(FUN . "post-type-instagram.php");
+
+
 // ACF
 require_once(FUN . "acf-options.php");

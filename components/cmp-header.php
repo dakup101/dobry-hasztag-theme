@@ -30,7 +30,7 @@
                 <li class="<?php echo $social_key < $social_count ? 'mr-4' : '' ?>">
                     <?php get_template_part( CMP, "btn", array(
                         'content' => file_get_contents($el['icon']),
-                        'url' => $el['link'],
+                        'url' => $el['url'],
                         'class' => 'rounded-full bg-white p-3',
                         'class_wrapper' => 'before:rounded-full'
                     )) ?>
