@@ -35,7 +35,7 @@ function youtube_post_post_type() {
 		'label'                 => __( 'Post z YouTube', 'dobry-hasztag' ),
 		'description'           => __( 'Posty z YouTube', 'dobry-hasztag' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'thumbnail', 'custom-fields' ),
+		'supports'              => array( 'title', 'thumbnail', 'custom-fields', 'page-attributes' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
