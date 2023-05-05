@@ -1,3 +1,7 @@
+// Defs
+
+export const ajaxUrl = "/wp-admin/admin-ajax.php";
+
 // YouTube API
 
 export const googleApiKey = process.env.GOOGLE_API_KEY;

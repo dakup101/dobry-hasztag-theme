@@ -14,7 +14,9 @@ module.exports = {
             'cyan' : '#50d5cd',
             'yellow' : '#f8d247',
             'yellow-light' : '#fbe66d',
-            'current' : 'currentColor'
+            'current' : 'currentColor',
+            'gray' : "#dbdbdb",
+            'gray-light' : "#ededed",
         },
 
         container: {

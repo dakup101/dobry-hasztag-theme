@@ -1,5 +1,5 @@
 <article data-fetched-yt-item>
-    <div class="neo-before">
+    <div class="neo-before before:translate-x-2 before:translate-y-2 before:rounded-3xl mr-2 mb-2">
         <div class="fetched-media">
             <figure class="absolute top-0 left-0 w-full h-full">
                 <img src="<?php the_field("preview") ?>"

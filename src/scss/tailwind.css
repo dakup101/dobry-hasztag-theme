@@ -18,7 +18,7 @@
 	/* Neo */
 	.neo-before {
 		@apply relative
-		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:top-1.5 before:left-1.5;
+		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:translate-x-1.5 before:translate-y-1.5;
 	}
 	.hero-play {
 		@apply absolute top-0 left-0 w-full h-full flex items-center justify-center text-rose bg-cyan bg-opacity-0 transition-all
@@ -29,8 +29,8 @@
 	}
 	/* Fetched Media */
 	.fetched-media {
-		@apply relative aspect-square w-full flex flex-col justify-end rounded-xl overflow-hidden px-6 py-6 transition-all
-		hover:translate-x-1.5 hover:translate-y-1.5;
+		@apply relative aspect-square w-full flex flex-col justify-end rounded-2xl overflow-hidden px-6 py-6 transition-all
+		hover:translate-x-2 hover:translate-y-2;
 	}
 	.fetched-media > figure {
 		@apply absolute top-0 left-0 w-full h-full after:transition-all

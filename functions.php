@@ -31,3 +31,7 @@ require_once(FUN . "post-type-instagram.php");
 // ACF
 require_once(FUN . "acf-options.php");
 require_once(FUN . "acf-options-youtube.php");
+// require_once(FUN . "acf-options-tiktok.php");
+
+// Ajax
+require_once(FUN . "ajax-media-content.php");

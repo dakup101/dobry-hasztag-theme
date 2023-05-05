@@ -1,4 +1,13 @@
-<?php get_template_part( CMP, "media-yt-vids" ) ?>
+<div data-fetched-media-wrapper
+     class=" overflow-y-auto pr-5">
+    <div data-fetched-skeleton
+         class="grid grid-cols-3 gap-6">
+        <?php for ($i=0; $i < 6; $i++) get_template_part(CMP, "media-skeleton") ?>
+    </div>
+    <div data-fetched-media>
+
+    </div>
+</div>
 
 <dialog data-modal
         data-yt-modal
