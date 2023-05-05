@@ -50,7 +50,7 @@ function youtube_post_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'instagram_post', $args );
+	register_post_type( 'youtube_post', $args );
 
 }
 add_action( 'init', 'youtube_post_post_type', 0 );
