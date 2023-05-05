@@ -29,17 +29,24 @@
 	}
 	/* Fetched Media */
 	.fetched-media {
-		@apply relative aspect-square w-full flex flex-col justify-end rounded-2xl overflow-hidden px-6 py-6;
+		@apply relative aspect-square w-full flex flex-col justify-end rounded-xl overflow-hidden px-6 py-6 transition-all
+		hover:translate-x-1.5 hover:translate-y-1.5;
 	}
 	.fetched-media > figure {
-		@apply absolute top-0 left-0 w-full h-full
-		after:absolute after:bg-dark after:opacity-25 after:top-0 after:left-0 after:w-full after:h-full;
+		@apply absolute top-0 left-0 w-full h-full after:transition-all
+		after:absolute after:bg-dark after:opacity-30 after:top-0 after:left-0 after:w-full after:h-full;
+	}
+	.fetched-media:hover > figure {
+		@apply after:bg-rose;
 	}
 	.fetched-media > figure img {
 		@apply w-full h-full object-cover;
 	}
 	.fetched-media > button {
-		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 flex items-center justify-center p-2 bg-dark bg-opacity-60 text-white rounded-full;
+		@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-16 w-16 flex items-center justify-center p-2 bg-dark bg-opacity-60 text-white rounded-full transition-all;
+	}
+	.fetched-media:hover > button {
+		@apply bg-opacity-80 hover:bg-yellow hover:text-dark hover:bg-opacity-100;
 	}
 	.fetched-media > button svg {
 		@apply fill-current;
