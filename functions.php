@@ -20,6 +20,7 @@ require_once(FUN . "cron-intervals.php");
 // Custom Functions
 require_once(FUN . "get-menu.php");
 require_once(FUN . "php-polish-months.php");
+require_once(FUN . "generate-video-thumb.php");
 
 
 // Post Types
@@ -30,8 +31,10 @@ require_once(FUN . "post-type-instagram.php");
 
 // ACF
 require_once(FUN . "acf-options.php");
-require_once(FUN . "acf-options-youtube.php");
-// require_once(FUN . "acf-options-tiktok.php");
+require_once(FUN . "acf-options-youtube.php"); // + YouTube Api
+require_once(FUN . "acf-options-instagram.php"); // + Instagram Api
+
+// require_once(FUN . "acf-options-tiktok.php"); // + TikTok Api
 
 // Ajax
 require_once(FUN . "ajax-media-content.php");

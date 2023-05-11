@@ -19,5 +19,10 @@ function ajax_media_content_content($post_type){
             get_template_part( CMP, "media-yt-vids" );
             return ob_get_clean();
         }
+        case "instagram_post": {
+            ob_start(); 
+            get_template_part( CMP, "media-ig-posts" );
+            return ob_get_clean();
+        }
     }
 }

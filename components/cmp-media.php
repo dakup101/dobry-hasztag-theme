@@ -1,3 +1,24 @@
+<div class="flex items-center mb-10">
+    <button data-media-switcher="youtube_post"
+            class="flex items-center mr-5">
+        <figure class="w-5 h-5 mr-3">
+            <?php echo file_get_contents(IMG . "yt.svg") ?>
+        </figure>
+        <span>
+            YouTube
+        </span>
+    </button>
+    <button data-media-switcher="instagram_post"
+            class="flex items-center">
+        <figure class="w-5 h-5 mr-3">
+            <?php echo file_get_contents(IMG . "ig.svg") ?>
+        </figure>
+        <span>
+            Instagram
+        </span>
+    </button>
+</div>
+
 <div data-fetched-media-wrapper
      class=" overflow-y-auto pr-5">
     <div data-fetched-skeleton

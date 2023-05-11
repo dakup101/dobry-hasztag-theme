@@ -14,6 +14,12 @@
     ));
 
     acf_add_options_sub_page(array(
+        'page_title'    => 'Instagram API',
+        'menu_title'    => 'Instagram API',
+        'parent_slug'   => 'theme-global',
+    ));
+
+    acf_add_options_sub_page(array(
         'page_title'    => 'TikTok API',
         'menu_title'    => 'TikTok API',
         'parent_slug'   => 'theme-global',
