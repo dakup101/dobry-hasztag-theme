@@ -1,21 +1,42 @@
+<div class="flex items-center justify-between mb-10">
+    <div class="flex items-center">
+        <figure class="rounded-full overflow-hidden w-20 h-20 shrink-0 mr-5">
+            <img src="<?php echo IMG . "dobry_pfp.png" ?>"
+                 alt="Dobry hasztag"
+                 class="w-full h-full object-cover object-center">
+        </figure>
+        <div class="div">
+            <h2 class="text-xl font-bold">#dobryhasztag w Social Media</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+        </div>
+    </div>
+    <?php get_template_part( CMP, "btn", array(
+                        'content' => "Obserwuj Nas",
+                        'type' => "button",
+                        'class'=> "show-social", 
+                    )) ?>
+</div>
+
 <div class="flex items-center mb-10">
     <button data-media-switcher="youtube_post"
-            class="flex items-center mr-5">
-        <figure class="w-5 h-5 mr-3">
+            class="flex items-center mr-5 disabled font-bold">
+        <figure class="w-5 h-5 mr-2">
             <?php echo file_get_contents(IMG . "yt.svg") ?>
         </figure>
-        <span>
+        <div>
             YouTube
-        </span>
+        </div>
     </button>
     <button data-media-switcher="instagram_post"
-            class="flex items-center">
-        <figure class="w-5 h-5 mr-3">
+            class="flex items-center disabled font-bold">
+        <figure class="w-5 h-5 mr-2">
             <?php echo file_get_contents(IMG . "ig.svg") ?>
         </figure>
-        <span>
+        <div>
             Instagram
-        </span>
+        </div>
     </button>
 </div>
 

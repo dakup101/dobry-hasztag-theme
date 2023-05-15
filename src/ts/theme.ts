@@ -1,40 +1,7 @@
 import fetchedMediaHeight from "./functions/fetched-media-height";
-import fetchMediaContent from "./functions/fetch-media-content";
+import mediaSwitchers_handle from "./handlers/media-switcher-handle";
 
 window.addEventListener("DOMContentLoaded", async () => {
 	fetchedMediaHeight();
-
-	const skeleton = document.querySelector(
-		"[data-fetched-skeleton]"
-	) as HTMLElement;
-	const fetchTarget = document.querySelector(
-		"[data-fetched-media]"
-	) as HTMLElement;
-
-	const switchers = document.querySelectorAll("[data-media-switcher]");
-	Array.from(switchers).forEach((el: HTMLButtonElement, key: number) => {
-		el.addEventListener("click", async (ev) => {
-			skeleton.style.display = "grid";
-			fetchTarget.innerHTML = "";
-			fetchTarget.style.display = "none";
-
-			ev.preventDefault();
-			el.classList.add("active");
-
-			Array.from(switchers).forEach((switcher) => {
-				switcher.classList.remove("active");
-			});
-			const posts_type = el.getAttribute("data-media-switcher");
-
-			let posts = await fetchMediaContent(posts_type);
-
-			if (posts) {
-				fetchTarget.innerHTML = posts;
-				skeleton.style.display = "none";
-				fetchTarget.style.display = "block";
-			}
-		});
-
-		if (key == 0) el.click();
-	});
+	mediaSwitchers_handle();
 });

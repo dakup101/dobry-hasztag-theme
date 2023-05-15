@@ -11,7 +11,7 @@
             </button>
             <div class="flex justify-between items-center relative">
                 <div class="flex items-center">
-                    <figure class="aspect-ration w-14 h-14 overflow-hidden rounded-full border border-dark mr-3">
+                    <figure class="aspect-ration w-10 h-10 overflow-hidden rounded-full border border-dark mr-3">
                         <img src="<?php echo IMG . "dobry_pfp.png" ?>"
                              alt="Dobry Hasztag"
                              class="w-full h-full object-cover object-center">
@@ -19,19 +19,19 @@
                     <div>
                         <a href="<?php the_field("channel_link") ?>"
                            target="_blank"
-                           class="block w-full font-bold text-white underline"
+                           class="block w-full font-bold text-white underline text-sm"
                            data-fetched-user-url>
                             <span data-fetched-user>
                                 <?php the_field("channel_title") ?>
                             </span>
                         </a>
                         <span data-fetched-date
-                              class="text-white">
+                              class="text-white text-sm font-light">
                             <?php the_field("data_publikacji") ?>
                         </span>
                     </div>
                 </div>
-                <figure class="w-8 h-8 text-white"
+                <figure class="w-5 h-5 text-white"
                         data-fetched-icon>
                     <?php echo file_get_contents(IMG . "yt.svg") ?>
                 </figure>
