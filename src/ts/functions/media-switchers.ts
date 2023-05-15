@@ -1,7 +1,11 @@
 import fetchMediaContent from "./fetch-media-content";
+import fetchedMediaHeight from "./fetched-media-height";
 
 export default function mediaSwitchers() {
 	console.log("--- Media Switchers Loaded ---");
+
+	// Set fixed height for media content wrapper
+	fetchedMediaHeight();
 
 	const skeleton = document.querySelector(
 		"[data-fetched-skeleton]"
