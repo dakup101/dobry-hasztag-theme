@@ -20,8 +20,6 @@ require_once(FUN . "cron-intervals.php");
 // Custom Functions
 require_once(FUN . "get-menu.php");
 require_once(FUN . "php-polish-months.php");
-require_once(FUN . "generate-video-thumb.php");
-
 
 // Post Types
 require_once(FUN . "post-type-tiktok.php");
