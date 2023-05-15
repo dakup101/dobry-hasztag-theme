@@ -22,10 +22,11 @@
 <div data-fetched-media-wrapper
      class=" overflow-y-auto pr-5">
     <div data-fetched-skeleton
-         class="grid grid-cols-3 gap-6">
+         class="grid grid-cols-3 gap-6 animate__animated animate__fadeIn">
         <?php for ($i=0; $i < 6; $i++) get_template_part(CMP, "media-skeleton") ?>
     </div>
-    <div data-fetched-media>
+    <div data-fetched-media
+         class="animate__animated animate__fadeIn">
 
     </div>
 </div>

@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 		el.addEventListener("click", async (ev) => {
 			skeleton.style.display = "grid";
 			fetchTarget.innerHTML = "";
+			fetchTarget.style.display = "none";
 
 			ev.preventDefault();
 			el.classList.add("active");
@@ -28,8 +29,9 @@ window.addEventListener("DOMContentLoaded", async () => {
 			let posts = await fetchMediaContent(posts_type);
 
 			if (posts) {
-				skeleton.style.display = "none";
 				fetchTarget.innerHTML = posts;
+				skeleton.style.display = "none";
+				fetchTarget.style.display = "block";
 			}
 		});
 
