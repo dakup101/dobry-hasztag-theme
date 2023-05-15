@@ -40,7 +40,8 @@ module.exports = {
                 'sans' : ['Inter', 'sans-serif'], 
                 'sofia' : ['sofia-pro-soft', 'sans-serif'],
                 'archio' : ['Archivo Narrow', 'sans-serif'],
-                'gambado' : ['gambado-sans', 'sans-serif']
+                'gambado' : ['gambado-sans', 'sans-serif'],
+                'hydro' : ['hydrophilia-iced', 'sans-serif']
             },
             animation: {
                 'spin-slow': 'spin 6s linear infinite'

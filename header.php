@@ -22,7 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap"
           rel="stylesheet">
 
-    <!-- Sofia Pro Soft Font Famili -->
+    <!-- Sofia Pro Soft Font Family -->
+    <link rel="stylesheet"
+          href="https://use.typekit.net/zjm1tnj.css">
+
+    <!-- Hydrophilia Iced Font Family -->
     <link rel="stylesheet"
           href="https://use.typekit.net/zjm1tnj.css">
 

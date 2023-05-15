@@ -1,8 +1,8 @@
-export default function mediaSwitchers_handle() {
-	const target = document.querySelector("[data-media-switcher]");
+export default function socialMarquee_handle() {
+	const target = document.querySelector("[data-social-marquee]");
 	if (!target) return;
 
-	console.log("--- Media Switcher Handle ---");
+	console.log("--- Social Marquee Handle ---");
 
 	const observerOpts = {
 		root: null,
@@ -14,9 +14,10 @@ export default function mediaSwitchers_handle() {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				import(
-					/* webpackChunkName: "print" */ "../functions/media-switchers"
+					/* webpackChunkName: "print" */ "../functions/social-marquee"
 				).then((module) => {
-					module.default();
+					const action = module.default;
+					action();
 				});
 				observer.unobserve(target);
 			}
