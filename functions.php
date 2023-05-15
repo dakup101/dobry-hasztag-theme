@@ -27,13 +27,12 @@ require_once(FUN . "generate-video-thumb.php");
 require_once(FUN . "post-type-tiktok.php");
 require_once(FUN . "post-type-youtube.php");
 require_once(FUN . "post-type-instagram.php");
-
+require_once(FUN . "post-type-people.php");
 
 // ACF
 require_once(FUN . "acf-options.php");
 require_once(FUN . "acf-options-youtube.php"); // + YouTube Api
 require_once(FUN . "acf-options-instagram.php"); // + Instagram Api
-
 // require_once(FUN . "acf-options-tiktok.php"); // + TikTok Api
 
 // Ajax
