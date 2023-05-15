@@ -5,11 +5,11 @@ get_header() ?>
     <?php get_template_part( CMP, "hero" ) ?>
 </section>
 
-<section class="container mx-auto px-40 pt-20 bg-yellow-light">
+<section class="container mx-auto px-40 pt-10 bg-yellow-light">
     <?php get_template_part( CMP, "hero-after" ) ?>
 </section>
 
-<section class="container mx-auto px-20 pt-20 bg-yellow-light pb-20">
+<section class="container mx-auto px-20 pt-10 pb-10 bg-gradient-to-b from-yellow-light to-yellow">
     <?php get_template_part( CMP, "updates" ) ?>
 </section>
 <?php get_template_part( CMP, "social-marquee" ) ?>

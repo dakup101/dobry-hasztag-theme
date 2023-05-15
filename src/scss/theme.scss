@@ -18,3 +18,19 @@
 .swiper-wrapper {
 	transition-timing-function: linear !important;
 }
+
+.animate-cut-to-left {
+	animation-name: rotate-cut-to-left;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rotate-cut-to-left {
+	from {
+		transform: rotate(10deg);
+	}
+	to {
+		transform: rotate(-15deg);
+	}
+}

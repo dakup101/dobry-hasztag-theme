@@ -35,14 +35,14 @@
             </div>
         </div>
     </div>
-    <div class="col-span-12 py-16">
+    <div class="col-span-12 pt-10">
         <h2 class="text-7xl font-sofia leading-none">
             <span class="text-shadow">Śledź naszą akcję</span>
             <span class="pl-44 flex justify-end flex-row-reverse items-start">
                 <span class="text-shadow leading-none">na bieżąco</span>
                 <img src="<?php echo IMG . "swing_arrow.png" ?>"
                      alt="Strzałka"
-                     class="mt-5 mr-5 w-28">
+                     class="mt-5 mr-5 w-28 animate-cut-to-left">
             </span>
         </h2>
     </div>
