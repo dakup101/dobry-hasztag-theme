@@ -1,0 +1,54 @@
+.simplebar-scrollbar {
+	width: 100% !important;
+	&::before {
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		border-radius: 0 !important;
+		opacity: 1 !important;
+		background: $dark !important;
+		cursor: pointer;
+	}
+	&:hover::before {
+		cursor: pointer;
+		background: $rose !important;
+	}
+}
+
+.simplebar-track.simplebar-vertical {
+	width: 28px !important;
+	background: #fff;
+	border: 2px solid $dark !important;
+	height: calc(100% - 60px);
+	top: 30px !important;
+	overflow: visible !important;
+	&::after {
+		content: "";
+		width: 28px;
+		height: 28px;
+		position: absolute;
+		bottom: -30px;
+		left: -2px;
+		border: 2px solid $dark;
+		border-top: 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'><path d='M12 21L0 3L24 3L12 21Z' fill='black'/></svg>");
+	}
+	&::before {
+		content: "";
+		width: 28px;
+		height: 28px;
+		position: absolute;
+		top: -30px;
+		left: -2px;
+		border: 2px solid $dark;
+		border-bottom: 0;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M12 3L24 21H0L12 3Z' fill='black'/></svg>");
+	}
+}

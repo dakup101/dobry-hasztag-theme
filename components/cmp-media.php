@@ -42,7 +42,9 @@
     </div>
 
     <div data-fetched-media-wrapper
-         class=" overflow-y-auto pr-5">
+         class=" overflow-y-auto pr-12"
+         data-simplebar
+         data-simplebar-auto-hide="false">
         <div data-fetched-skeleton
              class="grid grid-cols-3 gap-6 animate__animated animate__fadeIn">
             <?php for ($i=0; $i < 6; $i++) get_template_part(CMP, "media-skeleton") ?>
