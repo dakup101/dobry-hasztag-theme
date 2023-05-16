@@ -1,18 +1,23 @@
 import Swiper, { Navigation, Scrollbar } from "swiper";
 import "swiper/css/bundle";
 
-export default function peopleSlider() {
+import fetchPeopleContent from "./fetch-people-content";
+
+export default async function peopleSlider() {
 	console.log("--- People Slider Loaded ---");
 
 	const swiperWrapper = document.querySelector("[data-people]") as HTMLElement;
-	const dragSize = swiperWrapper.dataset.dragSize
-		? parseInt(swiperWrapper.dataset.dragSize)
-		: 50;
+
+	const swiperContent = await fetchPeopleContent();
+
+	swiperWrapper.innerHTML = swiperContent;
+
+	if (!swiperWrapper.querySelector(".swiper-slide")) return;
 
 	const swiper = new Swiper("[data-people]", {
 		modules: [Scrollbar, Navigation],
 		slidesPerView: 6,
-		spaceBetween: 35,
+		spaceBetween: 32,
 		navigation: {
 			nextEl: ".scrollbar-next",
 			prevEl: ".scrollbar-prev",
