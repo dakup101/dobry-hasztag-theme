@@ -11,11 +11,12 @@ get_header() ?>
 
 <section class="container mx-auto px-20 pt-10 pb-10 bg-gradient-to-b from-yellow-light to-yellow">
     <?php get_template_part( CMP, "updates" ) ?>
+
 </section>
 
 <?php get_template_part( CMP, "social-marquee" ) ?>
+<?php get_template_part( CMP, "people" ) ?>
 
 <!-- Social Dialog should be imported only 1 time -->
 <?php get_template_part( CMP, "social-dialog" ) ?>
-
 <?php get_footer() ?>

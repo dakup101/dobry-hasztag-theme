@@ -3,6 +3,13 @@
 .text-shadow {
 	text-shadow: 3px 3px $cyan;
 }
+.text-shadow-dark {
+	text-shadow: 3px 3px $dark;
+}
+.text-shadow-dark-sm {
+	text-shadow: 3px 3px $dark;
+}
+
 .text-stroke-rose {
 	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
 		2px 2px 0 $rose;
@@ -26,6 +33,13 @@
 	animation-direction: alternate;
 }
 
+.animate-cut-to-right {
+	animation-name: rotate-cut-to-right;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
 @keyframes rotate-cut-to-left {
 	from {
 		transform: rotate(10deg);
@@ -35,10 +49,70 @@
 	}
 }
 
+@keyframes rotate-cut-to-right {
+	from {
+		transform: rotate(-15deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+
 dialog {
 	background-color: transparent;
 	&::backdrop {
 		background: rgba(0, 0, 0, 0.4);
 		backdrop-filter: blur(8px);
+	}
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+	border: 2px solid $dark;
+	border-left: 0;
+	border-right: 0;
+	background: #fff;
+	height: 35px !important;
+	border-radius: 0 !important;
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+}
+
+.swiper-scrollbar-drag {
+	border-radius: 0 !important;
+	background: $dark !important;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		cursor: pointer;
+		background: $rose !important;
+	}
+}
+
+.scrollbar {
+	position: relative;
+	z-index: 10;
+	&-next,
+	&-prev {
+		border: 2px solid $dark;
+		height: 35px;
+		width: 35px;
+		flex-shrink: 0;
+		background: white;
+		color: $dark;
+
+		svg {
+			width: 100%;
+			height: 100%;
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: $rose;
+			background: $cyan;
+			cursor: pointer;
+			svg {
+				fill: $rose;
+			}
+		}
 	}
 }
