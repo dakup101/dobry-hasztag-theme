@@ -10,7 +10,7 @@ export default function socialDialog_handle() {
 
 	const observerOpts = {
 		root: null,
-		rootMargin: "-100px 0px 100px 0px",
+		rootMargin: "-150px 0px 150px 0px",
 		threshold: 0,
 	};
 

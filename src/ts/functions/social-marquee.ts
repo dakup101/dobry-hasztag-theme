@@ -2,7 +2,7 @@ import Swiper, { FreeMode, Autoplay, A11y } from "swiper";
 import "swiper/css/bundle";
 
 export default function socialMarquee() {
-	console.log("--- Social Loaded ---");
+	console.log("--- Social Marquee Loaded ---");
 
 	const sliderOne = new Swiper("[data-social-marquee]", {
 		modules: [FreeMode, Autoplay, A11y],

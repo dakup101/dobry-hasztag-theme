@@ -2,6 +2,8 @@ import Swiper, { Navigation, Scrollbar } from "swiper";
 import "swiper/css/bundle";
 
 export default function peopleSlider() {
+	console.log("--- People Slider Loaded ---");
+
 	const swiperWrapper = document.querySelector("[data-people]") as HTMLElement;
 	const dragSize = swiperWrapper.dataset.dragSize
 		? parseInt(swiperWrapper.dataset.dragSize)

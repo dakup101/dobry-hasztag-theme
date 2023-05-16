@@ -1,8 +1,9 @@
-export default function socialMarquee_handle() {
-	const target = document.querySelector("[data-social-marquee]");
+export default function simplebar_handle() {
+	const target = document.querySelector("[data-simplebar]");
+
 	if (!target) return;
 
-	console.log("--- Social Marquee Handle ---");
+	console.log("--- Simplebar Handle ---");
 
 	const observerOpts = {
 		root: null,
@@ -13,12 +14,12 @@ export default function socialMarquee_handle() {
 	const observer = new IntersectionObserver((entries, observer) => {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
-				import(
-					/* webpackChunkName: "print" */ "../functions/social-marquee"
-				).then((module) => {
-					const action = module.default;
-					action();
-				});
+				import(/* webpackChunkName: "print" */ "../functions/simplebar").then(
+					(module) => {
+						const action = module.default;
+						action();
+					}
+				);
 				observer.unobserve(target);
 			}
 		});

@@ -1,8 +1,9 @@
-export default function socialMarquee_handle() {
-	const target = document.querySelector("[data-social-marquee]");
+export default function peopleSlider_handle() {
+	const target = document.querySelector("[data-people]");
+
 	if (!target) return;
 
-	console.log("--- Social Marquee Handle ---");
+	console.log("--- People Slider Handle ---");
 
 	const observerOpts = {
 		root: null,
@@ -14,7 +15,7 @@ export default function socialMarquee_handle() {
 		entries.forEach((entry) => {
 			if (entry.isIntersecting) {
 				import(
-					/* webpackChunkName: "print" */ "../functions/social-marquee"
+					/* webpackChunkName: "print" */ "../functions/people-slider"
 				).then((module) => {
 					const action = module.default;
 					action();
