@@ -17,6 +17,12 @@ get_header() ?>
 <?php get_template_part( CMP, "social-marquee" ) ?>
 <?php get_template_part( CMP, "people" ) ?>
 
+<section class="pt-10 pb-10 bg-cyan">
+    <div class="container mx-auto px-20">
+        <?php get_template_part( CMP, "schedule" ) ?>
+    </div>
+</section>
+
 <!-- Social Dialog should be imported only 1 time -->
 <?php get_template_part( CMP, "social-dialog" ) ?>
 <?php get_footer() ?>

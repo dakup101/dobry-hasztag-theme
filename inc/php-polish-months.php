@@ -4,40 +4,40 @@ function get_month_in_pl($date){
     $month_name = '';
     switch ($month) {
         case 'January':
-            $month_name = 'stycznia';
+            $month_name = 'styczeń';
             break;
         case 'February':
-            $month_name = 'lutego';
+            $month_name = 'luty';
             break;
         case 'March':
-            $month_name = 'marca';
+            $month_name = 'marzec';
             break;
         case 'April':
-            $month_name = 'kwietnia';
+            $month_name = 'kwiecień';
             break;
         case 'May':
-            $month_name = 'maja';
+            $month_name = 'maj';
             break;
         case 'June':
-            $month_name = 'czerwca';
+            $month_name = 'czerwiec';
             break;
         case 'July':
-            $month_name = 'lipca';
+            $month_name = 'lipiec';
             break;
         case 'August':
-            $month_name = 'sierpnia';
+            $month_name = 'sierpień';
             break;
         case 'September':
-            $month_name = 'września';
+            $month_name = 'wrzesień';
             break;
         case 'October':
-            $month_name = 'października';
+            $month_name = 'październik';
             break;
         case 'November':
-            $month_name = 'listopada';
+            $month_name = 'listopad';
             break;
         case 'December':
-            $month_name = 'grudnia';
+            $month_name = 'grudzień';
             break;
     }
     return $month_name;

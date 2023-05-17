@@ -16,16 +16,22 @@ require_once(FUN . "allow-svg.php");
 require_once(FUN . "scripts-styles.php");
 require_once(FUN . "scripts-styles.php");
 require_once(FUN . "cron-intervals.php");
+require_once(FUN . "image-sizes.php");
+
 
 // Custom Functions
 require_once(FUN . "get-menu.php");
 require_once(FUN . "php-polish-months.php");
+require_once(FUN . "schedule-return-days.php");
+
 
 // Post Types
 require_once(FUN . "post-type-tiktok.php");
 require_once(FUN . "post-type-youtube.php");
 require_once(FUN . "post-type-instagram.php");
 require_once(FUN . "post-type-people.php");
+require_once(FUN . "post-type-schedule.php");
+
 
 // ACF
 require_once(FUN . "acf-options.php");
