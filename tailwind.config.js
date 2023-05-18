@@ -17,6 +17,11 @@ module.exports = {
             'current' : 'currentColor',
             'gray' : "#dbdbdb",
             'gray-light' : "#ededed",
+            'fb' : "#1e53ff",
+            'wa' : "#40ce50",
+            'twi' : "#1c9cea",
+            "li" : "#4de8f4",
+            "share" : "#ec002e"
         },
 
         container: {

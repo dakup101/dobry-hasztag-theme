@@ -3,8 +3,8 @@ import socialMarquee_handle from "./handlers/social-marquee-handle";
 import socialDialog_handle from "./handlers/social-dialog-handle";
 import peopleSlider_handle from "./handlers/people-slider-handle";
 import simplebar_handle from "./handlers/simplebar-handle";
-
-import scheduleDatesSlider from "./functions/schedule-dates-slider";
+import scheduleDatesSlider_handle from "./handlers/schedule-dates-handle";
+import copySiteUrl_handle from "./handlers/copy-site-url-to-clipboard-handle";
 
 window.addEventListener("DOMContentLoaded", async () => {
 	simplebar_handle();
@@ -12,6 +12,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 	socialMarquee_handle();
 	socialDialog_handle();
 	peopleSlider_handle();
-
-	scheduleDatesSlider();
+	scheduleDatesSlider_handle();
+	copySiteUrl_handle();
 });

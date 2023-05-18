@@ -27,6 +27,10 @@
 	font-size: 86px;
 }
 
+.el-drop-shadow {
+	filter: drop-shadow(0.35rem 0.35rem 0 $dark);
+}
+
 .swiper-wrapper {
 	transition-timing-function: linear !important;
 }

@@ -23,6 +23,9 @@ get_header() ?>
     </div>
 </section>
 
+<?php get_template_part( CMP, "share-us" ) ?>
+
+
 <!-- Social Dialog should be imported only 1 time -->
 <?php get_template_part( CMP, "social-dialog" ) ?>
 <?php get_footer() ?>
