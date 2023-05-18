@@ -20,6 +20,9 @@ export default function fetchScheduleItems() {
 				scheduleSkeleton.classList.remove("hidden");
 
 				// Styles
+				scheduleDatesWrapper.classList.add("opacity-80");
+				scheduleDatesWrapper.classList.add("pointer-events-none");
+
 				Array.from(scheduleDatesItems).forEach((el) => {
 					el.classList.remove("bg-yellow");
 					el.classList.remove("translate-x-1.5");
@@ -50,6 +53,9 @@ export default function fetchScheduleItems() {
 
 				// Events Galleries
 				scheduleItemsGallerySlider();
+
+				scheduleDatesWrapper.classList.remove("opacity-80");
+				scheduleDatesWrapper.classList.remove("pointer-events-none");
 			});
 
 			if (key == 0) date.click();
