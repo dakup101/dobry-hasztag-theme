@@ -1,0 +1,90 @@
+@import "./sub/variables";
+@import "./sub/simplebar.scss";
+@import "./sub/swiper-horizontal-scrollbar.scss";
+
+.text-shadow {
+	text-shadow: 3px 3px $cyan;
+}
+.text-shadow-dark {
+	text-shadow: 3px 3px $dark;
+}
+.text-shadow-dark-sm {
+	text-shadow: 3px 3px $dark;
+}
+.text-shadow-rose {
+	text-shadow: 3px 3px $rose;
+}
+
+.text-stroke-rose {
+	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
+		2px 2px 0 $rose;
+}
+.text-stroke-dark {
+	text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
+		2px 2px 0 $dark;
+}
+.text-hero {
+	font-size: 86px;
+}
+
+.el-drop-shadow {
+	filter: drop-shadow(0.35rem 0.35rem 0 $dark);
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
+.animate-cut-to-left {
+	animation-name: rotate-cut-to-left;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.animate-cut-to-right {
+	animation-name: rotate-cut-to-right;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rotate-cut-to-left {
+	from {
+		transform: rotate(10deg);
+	}
+	to {
+		transform: rotate(-15deg);
+	}
+}
+
+@keyframes rotate-cut-to-right {
+	from {
+		transform: rotate(-15deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+
+dialog {
+	background-color: transparent;
+	&::backdrop {
+		background: rgba(0, 0, 0, 0.4);
+		backdrop-filter: blur(8px);
+	}
+}
+
+.schedule-item-gallery-nav {
+	width: fit-content !important;
+	.swiper-pagination-bullet {
+		width: 15px !important;
+		height: 15px !important;
+		border: 2px solid $dark !important;
+		background: transparent !important;
+		opacity: 1;
+	}
+	.swiper-pagination-bullet-active {
+		background: $cyan !important;
+	}
+}
