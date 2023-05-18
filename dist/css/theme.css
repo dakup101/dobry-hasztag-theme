@@ -1,0 +1,193 @@
+.simplebar-scrollbar {
+  width: 100% !important;
+}
+.simplebar-scrollbar::before {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  background: #222 !important;
+  cursor: pointer;
+}
+.simplebar-scrollbar:hover::before {
+  cursor: pointer;
+  background: #ff2758 !important;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 28px !important;
+  background: #fff;
+  border: 2px solid #222 !important;
+  height: calc(100% - 60px);
+  top: 30px !important;
+  overflow: visible !important;
+}
+.simplebar-track.simplebar-vertical::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -30px;
+  left: -2px;
+  border: 2px solid #222;
+  border-top: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'><path d='M12 21L0 3L24 3L12 21Z' fill='black'/></svg>");
+}
+.simplebar-track.simplebar-vertical::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -30px;
+  left: -2px;
+  border: 2px solid #222;
+  border-bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M12 3L24 21H0L12 3Z' fill='black'/></svg>");
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  border: 2px solid #222;
+  border-left: 0;
+  border-right: 0;
+  background: #fff;
+  height: 28px !important;
+  border-radius: 0 !important;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.swiper-scrollbar-drag {
+  border-radius: 0 !important;
+  background: #222 !important;
+  transition: all 0.2s ease-in-out;
+}
+.swiper-scrollbar-drag:hover {
+  cursor: pointer;
+  background: #ff2758 !important;
+}
+
+.scrollbar {
+  position: relative;
+  z-index: 10;
+}
+.scrollbar-next, .scrollbar-prev {
+  border: 2px solid #222;
+  height: 28px;
+  width: 28px;
+  flex-shrink: 0;
+  background: white;
+  color: #222;
+}
+.scrollbar-next svg, .scrollbar-prev svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+.scrollbar-next:hover, .scrollbar-prev:hover {
+  color: #ff2758;
+  background: #50d5cd;
+  cursor: pointer;
+}
+.scrollbar-next:hover svg, .scrollbar-prev:hover svg {
+  fill: #ff2758;
+}
+
+.text-shadow {
+  text-shadow: 3px 3px #50d5cd;
+}
+
+.text-shadow-dark {
+  text-shadow: 3px 3px #222;
+}
+
+.text-shadow-dark-sm {
+  text-shadow: 3px 3px #222;
+}
+
+.text-shadow-rose {
+  text-shadow: 3px 3px #ff2758;
+}
+
+.text-stroke-rose {
+  text-shadow: -2px -2px 0 #ff2758, 2px -2px 0 #ff2758, -2px 2px 0 #ff2758, 2px 2px 0 #ff2758;
+}
+
+.text-stroke-dark {
+  text-shadow: -2px -2px 0 #222, 2px -2px 0 #222, -2px 2px 0 #222, 2px 2px 0 #222;
+}
+
+.text-hero {
+  font-size: 86px;
+}
+
+.el-drop-shadow {
+  filter: drop-shadow(0.35rem 0.35rem 0 #222);
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.animate-cut-to-left {
+  animation-name: rotate-cut-to-left;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animate-cut-to-right {
+  animation-name: rotate-cut-to-right;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate-cut-to-left {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes rotate-cut-to-right {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+dialog {
+  background-color: transparent;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.schedule-item-gallery-nav {
+  width: fit-content !important;
+}
+.schedule-item-gallery-nav .swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  border: 2px solid #222 !important;
+  background: transparent !important;
+  opacity: 1;
+}
+.schedule-item-gallery-nav .swiper-pagination-bullet-active {
+  background: #50d5cd !important;
+}
+
+/*# sourceMappingURL=theme.css.map */
