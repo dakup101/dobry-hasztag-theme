@@ -5,6 +5,7 @@ import peopleSlider_handle from "./handlers/people-slider-handle";
 import simplebar_handle from "./handlers/simplebar-handle";
 import scheduleDatesSlider_handle from "./handlers/schedule-dates-handle";
 import copySiteUrl_handle from "./handlers/copy-site-url-to-clipboard-handle";
+import partnersSlider_handle from "./handlers/partners-slider-handle";
 
 window.addEventListener("DOMContentLoaded", async () => {
 	simplebar_handle();
@@ -14,4 +15,5 @@ window.addEventListener("DOMContentLoaded", async () => {
 	peopleSlider_handle();
 	scheduleDatesSlider_handle();
 	copySiteUrl_handle();
+	partnersSlider_handle();
 });

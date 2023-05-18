@@ -24,6 +24,8 @@ get_header() ?>
 </section>
 
 <?php get_template_part( CMP, "share-us" ) ?>
+<?php get_template_part( CMP, "partners" ) ?>
+
 
 
 <!-- Social Dialog should be imported only 1 time -->

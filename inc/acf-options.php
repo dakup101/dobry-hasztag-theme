@@ -30,4 +30,10 @@
         'menu_title'    => 'Social Media',
         'parent_slug'   => 'theme-global',
     ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Partnerzy',
+        'menu_title'    => 'Partnerzy',
+        'parent_slug'   => 'theme-global',
+    ));
 }
