@@ -42,3 +42,4 @@ require_once(FUN . "acf-options-instagram.php"); // + Instagram Api
 // Ajax
 require_once(FUN . "ajax-media-content.php");
 require_once(FUN . "ajax-people-content.php");
+require_once(FUN . "ajax-schedule-content.php");

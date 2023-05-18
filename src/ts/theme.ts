@@ -12,5 +12,6 @@ window.addEventListener("DOMContentLoaded", async () => {
 	socialMarquee_handle();
 	socialDialog_handle();
 	peopleSlider_handle();
+
 	scheduleDatesSlider();
 });
