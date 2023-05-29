@@ -22,7 +22,10 @@ require_once(FUN . "image-sizes.php");
 // Custom Functions
 require_once(FUN . "get-menu.php");
 require_once(FUN . "php-polish-months.php");
+require_once(FUN . "php-polish-months-by-number.php");
 require_once(FUN . "schedule-return-days.php");
+require_once(FUN . "schedule-return-months.php");
+
 
 
 // Post Types

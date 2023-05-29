@@ -4,25 +4,31 @@
 
 .text-shadow {
 	text-shadow: 3px 3px $cyan;
-}
-.text-shadow-dark {
-	text-shadow: 3px 3px $dark;
-}
-.text-shadow-dark-sm {
-	text-shadow: 3px 3px $dark;
-}
-.text-shadow-rose {
-	text-shadow: 3px 3px $rose;
+	&-dark {
+		text-shadow: 3px 3px $dark;
+		&-sm {
+			text-shadow: 1px 1px $dark;
+		}
+	}
+	&-rose {
+		text-shadow: 3px 3px $rose;
+		&-sm {
+			text-shadow: 1px 1px $rose;
+		}
+	}
 }
 
-.text-stroke-rose {
-	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
-		2px 2px 0 $rose;
+.text-stroke {
+	&-rose {
+		text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
+			2px 2px 0 $rose;
+	}
+	&-dark {
+		text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
+			2px 2px 0 $dark;
+	}
 }
-.text-stroke-dark {
-	text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
-		2px 2px 0 $dark;
-}
+
 .text-hero {
 	font-size: 86px;
 }
