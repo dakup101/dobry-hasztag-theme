@@ -7,6 +7,8 @@ import scheduleDatesSlider_handle from "./handlers/schedule-dates-handle";
 import copySiteUrl_handle from "./handlers/copy-site-url-to-clipboard-handle";
 import partnersSlider_handle from "./handlers/partners-slider-handle";
 
+import fetchScheduleItemsByMonth from "./functions/fetch-schedule-items-by-month";
+
 window.addEventListener("DOMContentLoaded", async () => {
 	simplebar_handle();
 	mediaSwitchers_handle();
@@ -16,4 +18,5 @@ window.addEventListener("DOMContentLoaded", async () => {
 	scheduleDatesSlider_handle();
 	copySiteUrl_handle();
 	partnersSlider_handle();
+	fetchScheduleItemsByMonth();
 });

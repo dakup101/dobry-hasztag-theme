@@ -1,4 +1,4 @@
-<h2 class="block text-8xl text-shadow-rose font-sofia mb-20 text-center">
+<h2 class="block text-6xl text-shadow-rose font-sofia mb-20 text-center">
     Harmonogram projektu
 </h2>
 

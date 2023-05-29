@@ -5,7 +5,8 @@ module.exports = {
         './components/*.php',
         './header.php',
         './footer.php',
-        './src/ts/functions/*.ts'
+        './src/ts/functions/*.ts',
+        './inc/*.php'
     ],
     theme: {
         colors: {
