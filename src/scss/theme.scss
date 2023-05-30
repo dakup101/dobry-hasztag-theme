@@ -97,3 +97,17 @@ dialog {
 		background: $cyan !important;
 	}
 }
+
+.the-gallery::before,
+.the-gallery::after {
+	max-width: calc(100% - 56px);
+}
+
+.pagination-btn {
+	&:hover > div {
+		background: $rose;
+	}
+	&.active {
+		background: $rose;
+	}
+}

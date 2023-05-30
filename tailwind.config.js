@@ -24,7 +24,8 @@ module.exports = {
             'wa' : "#40ce50",
             'twi' : "#1c9cea",
             "li" : "#4de8f4",
-            "share" : "#ec002e"
+            "share" : "#ec002e",
+            "transparent" : "transparent"
         },
 
         container: {

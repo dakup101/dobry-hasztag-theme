@@ -28,6 +28,6 @@ get_header() ?>
 
 
 
-<!-- Social Dialog should be imported only 1 time -->
+<!-- Social Dialog should be imported only 1 time if "updates" component present -->
 <?php get_template_part( CMP, "social-dialog" ) ?>
 <?php get_footer() ?>

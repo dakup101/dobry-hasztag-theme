@@ -6,6 +6,8 @@ import simplebar_handle from "./handlers/simplebar-handle";
 import scheduleDatesSlider_handle from "./handlers/schedule-dates-handle";
 import copySiteUrl_handle from "./handlers/copy-site-url-to-clipboard-handle";
 import partnersSlider_handle from "./handlers/partners-slider-handle";
+import lightbox_handle from "./handlers/lightbox-handle";
+import articlesPagination_handle from "./handlers/articles-pagination";
 
 import fetchScheduleItemsByMonth from "./functions/fetch-schedule-items-by-month";
 
@@ -18,5 +20,8 @@ window.addEventListener("DOMContentLoaded", async () => {
 	scheduleDatesSlider_handle();
 	copySiteUrl_handle();
 	partnersSlider_handle();
+	lightbox_handle();
+	articlesPagination_handle();
+
 	fetchScheduleItemsByMonth();
 });

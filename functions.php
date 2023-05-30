@@ -48,3 +48,4 @@ require_once(FUN . "ajax-media-content.php");
 require_once(FUN . "ajax-people-content.php");
 require_once(FUN . "ajax-schedule-content.php");
 require_once(FUN . "ajax-schedule-content-by-month.php");
+require_once(FUN . "ajax-articles-pagination.php");

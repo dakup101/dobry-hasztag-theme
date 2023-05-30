@@ -38,15 +38,9 @@ get_header() ?>
     </div>
 </section>
 
-
 <?php get_template_part( CMP, "social-marquee" ) ?>
 <?php get_template_part( CMP, "people" ) ?>
-
 <?php get_template_part( CMP, "share-us" ) ?>
 <?php get_template_part( CMP, "partners" ) ?>
 
-
-
-<!-- Social Dialog should be imported only 1 time -->
-<?php get_template_part( CMP, "social-dialog" ) ?>
 <?php get_footer() ?>
