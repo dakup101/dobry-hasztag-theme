@@ -1,4 +1,4 @@
-<?php /* Template Name: Strona Główna */ 
+<?php /* Template Name: O nas */ 
 get_header() ?>
 
 <section class="container mx-auto px-40 pt-48 mt-10 bg-yellow-light rounded-t-3xl">
@@ -8,23 +8,21 @@ get_header() ?>
 </section>
 
 <section class="container mx-auto px-40 pt-10 bg-yellow-light">
-    <?php get_template_part( CMP, "hero-after" ) ?>
+    <?php get_template_part( CMP, "about" ) ?>
 </section>
 
-<section class="container mx-auto px-20 pt-10 pb-10 bg-gradient-to-b from-yellow-light to-yellow">
-    <?php get_template_part( CMP, "updates" ) ?>
+<section class="container mx-auto px-40 pt-20 pb-20 bg-gradient-to-b from-yellow-light to-yellow">
+    <?php get_template_part( CMP, "about-numbers" ) ?>
+</section>
 
+<section class="bg-cyan">
+    <div class="container mx-auto px-40 py-20">
+        <?php get_template_part( CMP, "about-info" ) ?>
+    </div>
 </section>
 
 <?php get_template_part( CMP, "social-marquee" ) ?>
 <?php get_template_part( CMP, "people" ) ?>
-
-<section class="pt-10 pb-10 bg-cyan">
-    <div class="container mx-auto px-20">
-        <?php get_template_part( CMP, "schedule" ) ?>
-    </div>
-</section>
-
 <?php get_template_part( CMP, "share-us" ) ?>
 <?php get_template_part( CMP, "partners" ) ?>
 

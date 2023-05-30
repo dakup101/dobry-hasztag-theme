@@ -9,6 +9,7 @@ $args = wp_parse_args($args, array(
 $img = $args["img"];
 $has_img = $args["has_img"];
 $has_gallery = $args["has_gallery"];
+$gllery = $has_gallery ? $args["gallery"] : array();
 ?>
 
 <figure
@@ -34,7 +35,7 @@ $has_gallery = $args["has_gallery"];
                          class="object-cover w-full h-full object-center">
                 </div>
 
-                <?php foreach(get_field("gallery") as $el) : ?>
+                <?php foreach($gllery as $el) : ?>
                 <div class="swiper-slide">
                     <?php $el_img = wp_get_attachment_image_src( $el["img"], 'event-thumbnail' )[0]; ?>
                     <img src="<?php echo $el_img ?>"

@@ -2,7 +2,7 @@
 get_header() ?>
 
 <section class="bg-cyan-dark pt-10">
-    <div class="container mx-auto px-40 pt-48 pb-10 bg-cyan rounded-t-3xl">
+    <div class="container mx-auto px-40 pt-48 mt-10 pb-10 bg-cyan rounded-t-3xl">
 
         <h1 class="block text-6xl text-shadow-rose font-sofia mb-20 text-center">
             Harmonogram projektu

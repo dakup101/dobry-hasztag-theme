@@ -1,7 +1,7 @@
 <?php /* Template Name: Profilaktyka */ 
 get_header() ?>
 
-<section class="container mx-auto px-40 pt-48 pb-10 bg-yellow-light rounded-t-3xl">
+<section class="container mx-auto px-40 pt-48 pb-10 mt-10 bg-yellow-light rounded-t-3xl">
     <h2 class="flex flex-col items-center font-sofia mt-10">
         <span class="block text-8xl text-shadow"><?php echo get_the_title() ?></span>
     </h2>
@@ -20,7 +20,6 @@ get_header() ?>
 
 <section class="container mx-auto px-20 pt-10 pb-10 bg-gradient-to-b from-yellow-light to-yellow">
     <?php get_template_part( CMP, "articles" ) ?>
-
 </section>
 
 <?php get_template_part( CMP, "social-marquee" ) ?>
