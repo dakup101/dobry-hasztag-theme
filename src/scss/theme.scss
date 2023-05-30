@@ -111,3 +111,53 @@ dialog {
 		background: $rose;
 	}
 }
+
+.wpcf7-form {
+	font-size: 16px;
+
+	label {
+		font-weight: bold;
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		span {
+			display: block;
+			margin-top: 0.5rem;
+		}
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		border-bottom: 2px solid $dark;
+		padding: 0.5rem 1.5rem;
+		background: #f2f2f2;
+	}
+	.wpcf7-spinner {
+		display: none;
+	}
+
+	input {
+		&[type="submit"] {
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+			background: $rose;
+			border: 4px solid $dark;
+			border-radius: 1rem;
+			font-weight: bold;
+			font-family: Archivo Narrow, sans-serif;
+			font-size: 1.25rem;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				background: $cyan;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.contact-dialog-content {
+	max-height: 60vh;
+}
