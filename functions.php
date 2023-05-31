@@ -22,7 +22,11 @@ require_once(FUN . "image-sizes.php");
 // Custom Functions
 require_once(FUN . "get-menu.php");
 require_once(FUN . "php-polish-months.php");
+require_once(FUN . "php-polish-months-by-number.php");
+require_once(FUN . "php-polish-days-by-number.php");
 require_once(FUN . "schedule-return-days.php");
+require_once(FUN . "schedule-return-months.php");
+
 
 
 // Post Types
@@ -43,3 +47,6 @@ require_once(FUN . "acf-options-instagram.php"); // + Instagram Api
 require_once(FUN . "ajax-media-content.php");
 require_once(FUN . "ajax-people-content.php");
 require_once(FUN . "ajax-schedule-content.php");
+require_once(FUN . "ajax-schedule-content-by-month.php");
+require_once(FUN . "ajax-articles-pagination.php");
+require_once(FUN . "ajax-event-content.php");

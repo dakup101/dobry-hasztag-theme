@@ -4,25 +4,40 @@
 
 .text-shadow {
 	text-shadow: 3px 3px $cyan;
-}
-.text-shadow-dark {
-	text-shadow: 3px 3px $dark;
-}
-.text-shadow-dark-sm {
-	text-shadow: 3px 3px $dark;
-}
-.text-shadow-rose {
-	text-shadow: 3px 3px $rose;
+	&-sm {
+		text-shadow: 1px 1px $cyan;
+	}
+	&-md {
+		text-shadow: 1.5px 1.5px $cyan;
+	}
+	&-dark {
+		text-shadow: 3px 3px $dark;
+		&-sm {
+			text-shadow: 1px 1px $dark;
+		}
+	}
+	&-rose {
+		text-shadow: 3px 3px $rose;
+		&-sm {
+			text-shadow: 1px 1px $rose;
+		}
+		&-md {
+			text-shadow: 1.5px 1.5px $rose;
+		}
+	}
 }
 
-.text-stroke-rose {
-	text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
-		2px 2px 0 $rose;
+.text-stroke {
+	&-rose {
+		text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
+			2px 2px 0 $rose;
+	}
+	&-dark {
+		text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
+			2px 2px 0 $dark;
+	}
 }
-.text-stroke-dark {
-	text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
-		2px 2px 0 $dark;
-}
+
 .text-hero {
 	font-size: 86px;
 }
@@ -86,5 +101,105 @@ dialog {
 	}
 	.swiper-pagination-bullet-active {
 		background: $cyan !important;
+	}
+}
+
+.the-gallery::before,
+.the-gallery::after {
+	max-width: calc(100% - 56px);
+}
+
+.pagination-btn {
+	&:hover > div {
+		background: $rose;
+	}
+	&.active {
+		background: $rose;
+	}
+}
+
+.wpcf7-form {
+	font-size: 16px;
+
+	label {
+		font-weight: bold;
+		margin-bottom: 2rem;
+		display: flex;
+		flex-direction: column;
+		span {
+			display: block;
+			margin-top: 0.5rem;
+		}
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		border-bottom: 2px solid $dark;
+		padding: 0.5rem 1.5rem;
+		background: #f2f2f2;
+	}
+	.wpcf7-spinner {
+		display: none;
+	}
+
+	input {
+		&[type="submit"] {
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+			background: $rose;
+			border: 4px solid $dark;
+			border-radius: 1rem;
+			font-weight: bold;
+			font-family: Archivo Narrow, sans-serif;
+			font-size: 1.25rem;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				background: $cyan;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.contact-dialog-content {
+	max-height: 70vh;
+}
+
+.lds-ring {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.lds-ring div {
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border: 8px solid $rose;
+	border-radius: 50%;
+	animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	border-color: $rose transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+	animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+	animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+	animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }

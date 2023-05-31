@@ -61,6 +61,7 @@ $has_gallery = !empty(get_field("gallery"));
         "has_img" => $has_img,
         "has_gallery" => $has_gallery,
         "key" => $args["key"],    
+        "gallery" => get_field("gallery")
     )) ?>
 </div>
 <?php endif; ?>

@@ -8,16 +8,14 @@
             <h3 class="font-bold text-3xl">
                 #dobryhasztag
             </h3>
-            <span class="text-2xl font-bold">
+            <span class="text-2xl font-bold mt-2 block">
                 dla dzieci w kryzysie
             </span>
-            <br>
             <a href="#"
                target="_blank"
                class="text-2xl font-bold underline">
                 www.zrzutka.pl
             </a>
-
         </div>
         <div class="pt-10 flex flex-col items-center">
             <img src="<?php echo IMG . "logo.png" ?>"

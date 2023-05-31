@@ -5,7 +5,19 @@
     "class" => null,
     "class_wrapper" => null,
     "rel" => null, 
-) ) ?>
+    "dataset" => array()
+)); 
+
+$dataset = null;
+
+if (!empty($btn["dataset"])) {
+    $dataset = "";
+    
+    foreach($btn["dataset"] as $set=>$value) {
+        $dataset .=  $set . '="' . $value . '" ';
+    }
+}
+?>
 
 
 <div class="btn-wrapper <?php echo $btn["class_wrapper"] ? $btn["class_wrapper"] : "" ?>">
@@ -19,7 +31,11 @@
 
     <?php elseif ($btn["type"] == "button") : ?>
 
-    <button class="btn <?php echo $btn["class"] ? $btn["class"] : "" ?>">
+
+
+
+    <button class="btn <?php echo $btn["class"] ? $btn["class"] : "" ?>"
+            <?php echo !empty($dataset) ? $dataset : "" ?>>
         <?php echo $btn["content"]; ?>
     </button>
 

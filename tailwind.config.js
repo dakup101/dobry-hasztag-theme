@@ -5,16 +5,21 @@ module.exports = {
         './components/*.php',
         './header.php',
         './footer.php',
-        './src/ts/functions/*.ts'
+        './src/ts/functions/*.ts',
+        './inc/*.php'
     ],
     theme: {
         colors: {
             'dark': '#222222',
             'white': '#ffffff',
             'rose' : '#ff2758',
-            'cyan' : '#50d5cd',
+            'rose-lighter' : '#ffbecd',
+            'cyan' : '#4FD5CE',
+            'cyan-dark' : "#36C1BA",
+            'cyan-lighter' : "#caf4f2",
             'yellow' : '#f8d247',
             'yellow-light' : '#fbe66d',
+            'yellow-lighter' : '#fbf4b2',
             'current' : 'currentColor',
             'gray' : "#dbdbdb",
             'gray-light' : "#ededed",
@@ -22,7 +27,8 @@ module.exports = {
             'wa' : "#40ce50",
             'twi' : "#1c9cea",
             "li" : "#4de8f4",
-            "share" : "#ec002e"
+            "share" : "#ec002e",
+            "transparent" : "transparent"
         },
 
         container: {
