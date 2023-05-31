@@ -2,28 +2,29 @@
 
 <header class="absolute top-10 left-0 w-full">
     <div class="container mx-auto flex justify-between items-center">
-        <a href="<?php echo get_home_url() ?>">
+        <a href="<?php echo get_home_url() ?>"
+           class=" shrink-0">
             <?php if ($args["alt"]) : ?>
             <img src="<?php echo IMG . "logo.png" ?>"
                  alt="#DOBRYHASZTAG"
-                 class="w-full max-w-72">
+                 class="h-full w-auto max-h-20 lg:max-h-28 xl:max-h-32">
             <?php else: ?>
             <img src="<?php echo IMG . "logo.png" ?>"
                  alt="#DOBRYHASZTAG"
-                 class="w-full max-w-72">
+                 class="h-full w-auto max-h-20 xl:max-h-24 2xl:max-h-32">
             <?php endif; ?>
         </a>
-        <nav>
+        <nav class="hidden xl:block">
             <ul class="flex list-none">
                 <?php $menu = get_menu("primary"); 
                 $menus_count = count($menu['menus']) - 1;
                 $menus_key = 0;
                 foreach($menu["menus"] as $el) : ?>
-                <li class="<?php echo $menus_key < $menus_count ? 'mr-8' : '' ?>">
+                <li class="<?php echo $menus_key < $menus_count ? 'mr-5 2xl:mr-8' : '' ?>">
                     <?php get_template_part( CMP, "btn", array(
                         'content' => $el['title'],
                         'url' => $el['url'],
-                        'class' => !empty($el['active']) ? 'bg-yellow translate-x-1.5 translate-y-1.5 events-none' : '', 
+                        'class' => 'text-base 2xl:text-lg' . (!empty($el['active']) ? 'bg-yellow translate-x-1.5 translate-y-1.5 events-none' : ''), 
                     )) ?>
                 </li>
                 <?php $menus_key++; endforeach; ?>
@@ -39,7 +40,7 @@
                     <?php get_template_part( CMP, "btn", array(
                         'content' => file_get_contents($el['icon']),
                         'url' => $el['url'],
-                        'class' => 'rounded-full bg-white p-3',
+                        'class' => 'rounded-full bg-white p-2 2xl:p-3',
                         'class_wrapper' => 'before:rounded-full'
                     )) ?>
                 </li>
