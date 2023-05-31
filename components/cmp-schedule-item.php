@@ -9,12 +9,13 @@ $has_gallery = !empty(get_field("gallery"));
 ?>
 
 <?php if ($has_img) : ?>
-<div class="grid grid-cols-3 gap-12">
+<div class="grid grid-cols-3 gap-8 md:gap-12">
     <?php endif; ?>
 
-    <article class="neo-before mb-1.5 mr-1.5 
-            <?php echo $has_img ? "col-span-2" : "" ?> 
-            <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-first" : "order-last" ?>">
+    <article
+             class="neo-before mb-1.5 mr-1.5 
+            <?php echo $has_img ? "col-span-3 md:col-span-2" : "" ?> 
+            <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-first" : "order-first md:order-last" ?>">
         <section class="relative bg-yellow rounded-xl border-4 border-dark px-5 py-5">
             <div class="flex">
                 <div class="flex-col font-sofia">

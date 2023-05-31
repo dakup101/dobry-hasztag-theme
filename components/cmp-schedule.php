@@ -1,8 +1,10 @@
-<h2 class="block text-6xl text-shadow-rose font-sofia mb-20 text-center">
+<h2 class="block text-4xl md:text-6xl text-shadow-rose font-sofia mb-10 md:mb-20 text-center">
     Harmonogram projektu
 </h2>
 
-<?php get_template_part( CMP, "schedule-dates" ) ?>
+<div class="px-16 xl:px-0">
+    <?php get_template_part( CMP, "schedule-dates" ) ?>
+</div>
 
 <div data-schedule-items-skeleton
      class="hidden animate__animated animate__fadeIn">

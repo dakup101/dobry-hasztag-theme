@@ -13,8 +13,8 @@ $gllery = $has_gallery ? $args["gallery"] : array();
 ?>
 
 <figure
-        class="neo-before mb-1.5 mr-1.5 <?php echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-2" : "order-1" ?>">
-    <div class="relative h-full bg-rose border-4 border-dark rounded-xl overflow-hidden pt-10">
+        class="neo-before col-span-3 md:col-span-1 mb-1.5 mr-1.5 <?php echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-2" : "order-3 md:order-1" ?>">
+    <div class="relative h-full bg-rose border-4 border-dark rounded-xl overflow-hidden pt-10 min-h-[250px]">
         <?php if ($has_gallery) : ?>
         <div data-schedule-item-gallery
              class="absolute w-full h-full top-0 left-0 z-10">

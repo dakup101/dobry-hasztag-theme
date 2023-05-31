@@ -35,13 +35,13 @@ if (!empty($dates)) : ?>
                         'content' => file_get_contents(IMG . "arrow_harmonogram_prev.svg"),
                         'type' => 'button',
                         'class' => 'rounded-full bg-white p-3 schedule-prev hover:bg-rose cursor-pointer',
-                        'class_wrapper' => 'before:rounded-full absolute top-1/2 -left-20 -translate-y-1/2'
+                        'class_wrapper' => 'before:rounded-full absolute top-1/2 -left-16 lg:-left-20 -translate-y-1/2'
                     )) ?>
         <?php get_template_part( CMP, "btn", array(
                         'content' => file_get_contents(IMG . "arrow_harmonogram_next.svg"),
                         'type' => 'button',
                         'class' => 'rounded-full bg-white p-3 schedule-next hover:bg-rose cursor-pointer',
-                        'class_wrapper' => 'before:rounded-full absolute top-1/2 -right-20 -translate-y-1/2'
+                        'class_wrapper' => 'before:rounded-full absolute top-1/2 -right-16 lg:-right-20 -translate-y-1/2'
                     )) ?>
     </div>
 </div>
