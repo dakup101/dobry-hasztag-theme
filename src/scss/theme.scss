@@ -40,6 +40,15 @@
 
 .text-hero {
 	font-size: 86px;
+	@media (max-width: 1540px) {
+		font-size: 72px;
+	}
+	@media (max-width: 1240px) {
+		font-size: 64px;
+	}
+	@media (max-width: 991px) {
+		font-size: 56px;
+	}
 }
 
 .el-drop-shadow {
