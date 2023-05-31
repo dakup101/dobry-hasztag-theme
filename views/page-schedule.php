@@ -38,6 +38,8 @@ get_header("header-cyan") ?>
     </div>
 </section>
 
+<?php get_template_part( CMP, "schedule-dialog" ) ?>
+
 <?php get_template_part( CMP, "social-marquee" ) ?>
 <?php get_template_part( CMP, "people" ) ?>
 <?php get_template_part( CMP, "share-us" ) ?>

@@ -49,7 +49,7 @@ $event_date = get_field("date");
                 </p>
                 <p class="font-sofia font-bold text-lg"><?php echo get_the_title(); ?></p>
                 <button class="text-rose font-archio underline text-lg my-2"
-                        data-eventId="<?php echo get_the_ID() ?>">Czytaj więcej</button>
+                        data-event-id="<?php echo get_the_ID() ?>">Czytaj więcej</button>
                 <img class=" max-h-3 h-full w-auto"
                      src="<?php echo IMG . "wave.png" ?>"
                      alt="">

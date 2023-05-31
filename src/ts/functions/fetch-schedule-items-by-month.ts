@@ -1,4 +1,5 @@
 import { ajaxUrl } from "../helper";
+import scheduleDialog from "./schedule-dialog";
 
 export default function fetchScheduleItemsByMonth() {
 	console.log("chuj");
@@ -44,6 +45,9 @@ export default function fetchScheduleItemsByMonth() {
 					});
 
 				scheduleEventsWrapper.innerHTML = events;
+
+				scheduleDialog();
+
 				skeleton.classList.add("hidden");
 				scheduleEventsWrapper.classList.remove("hidden");
 			});
