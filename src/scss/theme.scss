@@ -4,6 +4,12 @@
 
 .text-shadow {
 	text-shadow: 3px 3px $cyan;
+	&-sm {
+		text-shadow: 1px 1px $cyan;
+	}
+	&-md {
+		text-shadow: 1.5px 1.5px $cyan;
+	}
 	&-dark {
 		text-shadow: 3px 3px $dark;
 		&-sm {
