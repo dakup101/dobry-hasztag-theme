@@ -38,8 +38,8 @@ module.exports = {
             },
             screens: {
                 DEFAULT: '100%',
-                xs: '468px',
-                sm: '600px',
+                xs: '100%',
+                sm: '100%',
                 md: '991px',
                 lg: '1240px',
                 xl: '1540px',

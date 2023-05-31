@@ -2,7 +2,7 @@
     <div class=" border-t-8 border-b-8 py-10 bg-white relative overflow-hidden">
         <div class="container mx-auto">
             <div class="flex justify-center items-center">
-                <h2 class="text-8xl font-sans  font-black text-shadow">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-sans  font-black text-shadow">
                     Udostępnij<br>nasz projekt
                 </h2>
                 <figure>

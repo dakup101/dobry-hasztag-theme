@@ -20,7 +20,8 @@
 
 
     <div class="container mx-auto relative">
-        <h2 class="text-8xl text-white text-shadow-rose text-center font-sofia">
+        <h2
+            class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white text-shadow-rose text-center font-sofia">
             Partnerzy akcji
         </h2>
     </div>

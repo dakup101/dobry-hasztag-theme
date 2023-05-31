@@ -5,7 +5,7 @@
 )); if ($posts->have_posts()) : ?>
 
 <h2 class="flex flex-col items-center font-sofia">
-    <span class="block text-8xl text-shadow">Przeczytaj artykuły</span>
+    <span class="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-shadow">Przeczytaj artykuły</span>
 </h2>
 
 <?php

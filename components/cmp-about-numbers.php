@@ -1,7 +1,7 @@
 <div class="grid grid-cols-5 bg-right bg-no-repeat bg-contain"
      style="background-image: url('<?php echo IMG . "about-bg.png" ?>')">
     <div class="col-span-3">
-        <h2 class="text-8xl font-sofia text-shadow-rose">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-sofia text-shadow-rose">
             Akcja w liczbach
         </h2>
         <div class="text-4xl font-gambado mt-5">

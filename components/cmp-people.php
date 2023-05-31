@@ -3,8 +3,8 @@
     <div class="absolute w-96 h-full top-10 -left-10 bg-contain bg-top bg-no-repeat animate-cut-to-right"
          style="background-image: url('<?php echo IMG . "kciuk_02.png" ?>')"></div>
     <h2 class="flex flex-col items-center font-sofia">
-        <span class="block text-8xl text-shadow">Dobrzy ludzie</span>
-        <span class="block ml-52 text-6xl text-shadow-dark text-rose">#dobryhasztag</span>
+        <span class="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-shadow">Dobrzy ludzie</span>
+        <span class="block ml-52 text-2xl md:text-3xl 2xl:text-6xl text-shadow-dark text-rose">#dobryhasztag</span>
     </h2>
 
 
