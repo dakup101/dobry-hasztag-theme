@@ -6,7 +6,7 @@
              class="absolute w-full h-full object-cover object-center border-4 rounded-xl border-dark hover:border-rose hover:translate-x-1.5 hover:translate-y-1.5 transition-all">
     </a>
     <section class="col-span-2">
-        <h3 class="text-2xl font-sofia mb-5 hover:text-rose">
+        <h3 class="text-2xl font-sofia mb-5 hover:text-rose transition-all">
             <a href="<?php echo get_the_permalink() ?>">
                 <?php echo get_the_title(  ) ?>
             </a>
