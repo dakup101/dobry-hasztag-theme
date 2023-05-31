@@ -1,5 +1,5 @@
 <?php /* Template Name: Kalendarz */ 
-get_header("header-cyan") ?>
+get_header("cyan") ?>
 
 <section class="bg-cyan-dark mt-10">
     <div class="container mx-auto px-40 pt-48 pb-10 bg-cyan rounded-t-3xl">
