@@ -1,7 +1,7 @@
 <div class="py-5">
-    <div class="flex items-center justify-between mb-10">
+    <div class="flex items-center justify-between mb-10 flex-col md:flex-row">
         <div class="flex items-center">
-            <figure class="rounded-full overflow-hidden w-20 h-20 shrink-0 mr-5">
+            <figure class="rounded-full overflow-hidden w-14 h-14 md:w-20 md:h-20 shrink-0 mr-5">
                 <img src="<?php echo IMG . "dobry_pfp.png" ?>"
                      alt="Dobry hasztag"
                      class="w-full h-full object-cover object-center">
@@ -17,6 +17,7 @@
                         'content' => "Obserwuj Nas",
                         'type' => "button",
                         'class'=> "show-social", 
+                        'class_wrapper' => 'mt-5 md:mt-0 shrink-0'
                     )) ?>
     </div>
 
@@ -46,8 +47,19 @@
          data-simplebar
          data-simplebar-auto-hide="false">
         <div data-fetched-skeleton
-             class="grid grid-cols-3 gap-6 animate__animated animate__fadeIn">
-            <?php for ($i=0; $i < 6; $i++) get_template_part(CMP, "media-skeleton") ?>
+             class="grid grid-cols-6 gap-6 animate__animated animate__fadeIn">
+            <?php for ($i=0; $i < 6; $i++) : ?>
+            <?php 
+                $visibility = "" ;
+                if ($i>=4) $visibility = "hidden md:block";
+                else if ($i>=2) $visibility = "hidden sm:block";
+                else $visibility = "block"
+                ?>
+            <div
+                 class="<?php echo $visibility ?> col-span-6 sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-3 2xl:col-span-2">
+                <?php get_template_part(CMP, "media-skeleton") ?>
+            </div>
+            <?php endfor; ?>
         </div>
         <div data-fetched-media
              class="animate__animated animate__fadeIn">

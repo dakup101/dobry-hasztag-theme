@@ -18,7 +18,7 @@ $yt_normal = new WP_Query(array(
 <?php if ($yt_imported->have_posts()): ?>
 
 <div id="youtube-posts"
-     class="grid grid-cols-3 gap-6">
+     class="grid grid-cols-6 gap-6">
     <?php 
     if ($yt_normal->have_posts()){
         while($yt_normal->have_posts()){

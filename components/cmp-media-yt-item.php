@@ -1,4 +1,5 @@
-<article data-fetched-yt-item>
+<article data-fetched-yt-item
+         class="col-span-6 sm:col-span-3 md:col-span-2 lg:col-span-2 xl:col-span-3 2xl:col-span-2">
     <div class="neo-before before:translate-x-2 before:translate-y-2 before:rounded-3xl mr-2 mb-2">
         <div class="fetched-media">
             <figure class="absolute top-0 left-0 w-full h-full">

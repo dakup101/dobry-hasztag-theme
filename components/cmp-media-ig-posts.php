@@ -18,7 +18,7 @@ $ig_normal = new WP_Query(array(
 <?php if ($ig_imported->have_posts()): ?>
 
 <div id="instagram-posts"
-     class="grid grid-cols-3 gap-6">
+     class="grid grid-cols-6 gap-6">
     <?php 
     if ($ig_normal->have_posts()){
         while($ig_normal->have_posts()){

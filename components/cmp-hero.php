@@ -1,21 +1,21 @@
 <div class="grid grid-cols-12 items-center">
-    <div class="col-12 md:col-span-6">
+    <div class="col-span-12 md:col-span-6">
         <h1 class=" text-hero font-black leading-tight">
             <span class="text-shadow">Dołącz do<br>naszej akcji</span>
             <br>
             <span class="text-stroke-rose text-yellow-light">#dobryhasztag</span>
         </h1>
     </div>
-    <div class="col-12 md:col-span-6 pl-20">
+    <div class="col-span-12 md:col-span-6 md:pl-20 mt-10 md:mt-0">
         <?php $hero_vid = get_field("hero_vid") ?>
-        <div class="relative neo-before">
+        <div class="relative neo-before mb-1.5 mr-1.5">
             <div class="border-4 border-dark rounded-2xl overflow-hidden bg-yellow relative">
                 <div class="border-b-4 px-4 py-2 font-sofia text-xl font-bold">
                     <span>
                         <?php echo $hero_vid["title"] ?>
                     </span>
                 </div>
-                <figure class=" py-48 relative">
+                <figure class=" py-28 md:py-48 relative">
                     <img src="<?php echo $hero_vid["preview"] ?>"
                          alt="<?php echo $hero_vid["title"] ?>"
                          class="absolute top-0 left-0 object-cover w-full h-full">

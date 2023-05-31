@@ -1,6 +1,4 @@
-<div>
-    <div
-         class="neo-before before:translate-x-2 before:translate-y-2 before:rounded-3xl pointer-events-none before:bg-gray animate-pulse mr-2 mb-2">
+    <div class="neo-before pointer-events-none before:bg-gray animate-pulse mr-1.5 mb-1.5">
         <div class="fetched-media">
             <figure class="absolute top-0 left-0 w-full h-full bg-gray-light after:!opacity-0">
             </figure>
@@ -25,4 +23,3 @@
             </div>
         </div>
     </div>
-</div>

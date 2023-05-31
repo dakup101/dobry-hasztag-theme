@@ -2,7 +2,7 @@
 get_header("cyan") ?>
 
 <section class="bg-cyan-dark mt-10">
-    <div class="container mx-auto px-5 lg:px-10 2xl:px-40 pt-48 pb-10 bg-cyan lg:rounded-t-3xl">
+    <div class="container mx-auto px-5 lg:px-10 2xl:px-40 pt-32 2xl:pt-48 pb-10 bg-cyan lg:rounded-t-3xl">
 
         <h1
             class="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-shadow-rose font-sofia mb-20 text-center">

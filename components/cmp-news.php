@@ -11,7 +11,7 @@
     <div class="mt-10">
         <?php while($posts->have_posts()) : $posts->the_post(); ?>
         <article
-                 class="<?php echo $posts->current_post < 4 ? "mb-5 pb-5 border-b border-dark border-opacity-10" : "" ?> flex items-center">
+                 class="<?php echo $posts->current_post < 4 ? "mb-5 pb-5 border-b border-dark border-opacity-10" : "" ?> flex items-start md:items-center">
             <a href="<?php echo get_the_permalink() ?>"
                class="block hover:shadow-cyan hover:shadow-lg w-20 h-20 overflow-hidden rounded shrink-0 mr-5 transition-all">
                 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), "thumbnail") ?>"
@@ -39,6 +39,7 @@
     <?php endif; ?>
 
     <a href="#"
-       class="text-xl underline text-rose font-bold font-archio block mt-10">Przeczytaj wszystkie wiadomości</a>
+       class="text-xl underline text-rose font-bold font-archio block mt-10 text-center md:text-right">Przeczytaj
+        wszystkie wiadomości</a>
 
 </div>
