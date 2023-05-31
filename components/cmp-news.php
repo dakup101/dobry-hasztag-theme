@@ -24,7 +24,13 @@
                         <?php echo get_the_title() ?>
                     </a>
                 </h3>
-                <p><?php echo get_the_excerpt() ?></p>
+                <?php
+                $excerpt = get_the_excerpt();
+                $excerpt_formatted = (mb_strlen($excerpt, 'UTF-8') > 70) 
+                ? mb_substr($excerpt, 0, 70, 'UTF-8') . " <a href='".get_permalink()."' class='text-rose hover:text-cyan-dark' title='Czytaj więcej'>[...]</a>" 
+                : $excerpt;
+                ?>
+                <p><?php echo $excerpt_formatted ?></p>
             </section>
         </article>
         <?php endwhile; ?>

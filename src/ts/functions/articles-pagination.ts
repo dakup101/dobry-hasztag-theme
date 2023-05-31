@@ -30,6 +30,7 @@ export default function articlesPagination() {
 			const perPage = btn.dataset.perpage;
 			const page = btn.dataset.page;
 			const category = btn.dataset.category ? btn.dataset.category : null;
+			const blog_item = btn.dataset.blogitem ? "blogitem" : null;
 
 			const data = new FormData();
 
@@ -40,6 +41,7 @@ export default function articlesPagination() {
 			console.log(data);
 
 			if (category) data.append("category", category);
+			if (blog_item) data.append("blog_item", blog_item);
 
 			const posts = await fetch(ajaxUrl, {
 				method: "POST",

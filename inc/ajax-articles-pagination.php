@@ -10,11 +10,12 @@ function ajax_articles_pagination(){
     $page = $_POST["page"];
     $perPage = $_POST["perPage"];
     $category = isset($_POST["category"]) ? $_POST["category"] : null;
-    echo ajax_articles_pagination_content($page, $perPage, $category);
+    $blog_item = isset($_POST["blog_item"]) ? true : false;
+    echo ajax_articles_pagination_content($page, $perPage, $category, $blog_item);
     wp_die();
 }
 
-function ajax_articles_pagination_content($page, $perPage,  $category){
+function ajax_articles_pagination_content($page, $perPage,  $category, $blog_item){
     $args = array(
         "post_type" => "post", 
         "posts_per_page" => $perPage, 
@@ -30,8 +31,9 @@ function ajax_articles_pagination_content($page, $perPage,  $category){
     ob_start();
 
     while ($posts->have_posts()) {
-        $posts->the_post(); 
-        get_template_part(CMP, "articles-item");
+        $posts->the_post();
+        if ($blog_item) get_template_part(CMP, "blog-item");
+        else get_template_part(CMP, "articles-item");
     }
 
     return ob_get_clean();
