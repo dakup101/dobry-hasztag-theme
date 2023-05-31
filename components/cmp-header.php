@@ -1,9 +1,17 @@
+<?php $args = wp_parse_args( $args, array("alt" => false) ) ?>
+
 <header class="absolute top-10 left-0 w-full">
     <div class="container mx-auto flex justify-between items-center">
         <a href="<?php echo get_home_url() ?>">
+            <?php if ($args["alt"]) : ?>
             <img src="<?php echo IMG . "logo.png" ?>"
                  alt="#DOBRYHASZTAG"
                  class="w-full max-w-72">
+            <?php else: ?>
+            <img src="<?php echo IMG . "logo.png" ?>"
+                 alt="#DOBRYHASZTAG"
+                 class="w-full max-w-72">
+            <?php endif; ?>
         </a>
         <nav>
             <ul class="flex list-none">
