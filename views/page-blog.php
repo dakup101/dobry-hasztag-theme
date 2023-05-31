@@ -10,7 +10,7 @@ get_header() ?>
             <div class="col-span-2 order-last">
                 <?php get_template_part( CMP, "blog-items" ); ?>
             </div>
-            <div class="col-span-3 order-first">
+            <div class="col-span-3 order-first grid gap-y-6">
                 <?php get_template_part( CMP, "blog-featured" ); ?>
             </div>
         </div>
