@@ -21,6 +21,14 @@ export default function partnersSlider() {
 		},
 		speed: 6000,
 		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				speed: 3000,
+			},
+			540: {
+				slidesPerView: 3,
+				speed: 3000,
+			},
 			768: {
 				slidesPerView: 4,
 				speed: 4000,

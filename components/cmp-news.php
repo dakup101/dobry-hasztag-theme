@@ -39,7 +39,7 @@
     <?php endif; ?>
 
     <a href="#"
-       class="text-xl underline text-rose font-bold font-archio block mt-10 text-center md:text-right">Przeczytaj
+       class="text-xl underline text-rose hover:text-cyan font-bold font-archio block mt-10 text-center md:text-left">Przeczytaj
         wszystkie wiadomości</a>
 
 </div>

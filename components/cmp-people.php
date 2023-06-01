@@ -18,6 +18,7 @@
             $visibility = "" ;
             if ($i>=3) $visibility = "hidden xl:block";
             else if ($i>=2) $visibility = "hidden lg:block";
+            else if ($i>=1) $visibility = "hidden sm:block";
             else $visibility = "block"
             ?>
             <div

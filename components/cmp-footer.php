@@ -1,9 +1,9 @@
 <footer class="bg-yellow overflow-hidden">
-    <section class="container mx-auto grid grid-cols-3">
-        <div class="relative pt-40">
+    <section class="container mx-auto grid grid-cols-6">
+        <div class="text-center md:text-left col-span-6 sm:col-span-3 lg:col-span-2 order-2 lg:order-1 relative pt-40">
             <img src="<?php echo IMG . "stopka_reka.png" ?>"
                  alt="#dobryhasztag"
-                 class="absolute h-40 -top-5 left-0 animate-cut-to-right">
+                 class="absolute h-40 top-0 lg:-top-5 left-10 md:left-0 animate-cut-to-right">
 
             <h3 class="font-bold text-3xl">
                 #dobryhasztag
@@ -17,7 +17,7 @@
                 www.zrzutka.pl
             </a>
         </div>
-        <div class="pt-10 flex flex-col items-center">
+        <div class="col-span-6 lg:col-span-2 order-1 lg:order-2 pt-10 flex flex-col items-center">
             <img src="<?php echo IMG . "logo.png" ?>"
                  alt="#DOBRYHASZTAG"
                  class="w-full max-w-xs">
@@ -32,16 +32,16 @@
                         'content' => file_get_contents($el['icon']),
                         'url' => $el['url'],
                         'class' => 'rounded-full bg-yellow p-3',
-                        'class_wrapper' => 'before:rounded-full'
+                        'class_wrapper' => 'before:rounded-full mb-1.5 mr-1.5'
                     )) ?>
                     </li>
                     <?php $social_key++; endforeach; ?>
                 </ul>
             </nav>
         </div>
-        <div class="pt-10 pl-20">
-            <div class="grid grid-cols-2">
-                <div>
+        <div class="col-span-6 sm:col-span-3 lg:col-span-2 order-3 pt-10 lg:pl-20">
+            <div class="grid grid-cols-2 gap-5 sm:gap-10">
+                <div class="col-span-1 sm:col-span-1 ">
                     <h3 class="text-2xl font-bold mb-1">Menu</h3>
                     <nav>
                         <ul class="flex flex-col list-none">
@@ -59,7 +59,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
+                <div class="col-span-1 sm:col-span-1 ">
                     <h3 class="text-2xl font-bold mb-1">Kontakt</h3>
                     <span class="uppercase">
                         ul. JÓZEFA MARCINKA 4<br>

@@ -33,7 +33,7 @@
             </ul>
         </nav>
         <nav>
-            <ul class="flex list-none">
+            <ul class="hidden sm:flex list-none">
                 <?php $social = get_field("opt_social", "options"); 
                 $social_count = count($social) - 1;
                 $social_key = 0;

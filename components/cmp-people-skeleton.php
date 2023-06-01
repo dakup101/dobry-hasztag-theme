@@ -1,5 +1,5 @@
     <div class="relative bg-gray-light rounded-xl overflow-hidden border-4 border-gray">
-        <figure class=" h-64 2xl:h-96 border-b-4 border-gray bg-gray-light">
+        <figure class="h-52 md:h-64 2xl:h-96 border-b-4 border-gray bg-gray-light">
         </figure>
         <div class="px-10 py-5">
             <div class="h-4 mb-2 bg-gray block w-full"></div>
