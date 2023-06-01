@@ -2,7 +2,7 @@ import { ajaxUrl } from "../helper";
 import scheduleDialog from "./schedule-dialog";
 
 export default function fetchScheduleItemsByMonth() {
-	console.log("chuj");
+	console.log("--- Fetching Months ---");
 
 	const scheduleEventsWrapper = document.querySelector("[data-month-content]");
 	const skeleton = document.querySelector("[data-month-skeleton]");

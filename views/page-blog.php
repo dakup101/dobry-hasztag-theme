@@ -2,7 +2,7 @@
 get_header() ?>
 
 <section
-         class="container mx-auto px-5 lg:px-10 2xl:px-40 pt-32 2xl:pt-48 pb-10 mt-10 bg-gradient-to-b from-yellow-light to-yellow lg:rounded-t-3xl">
+         class="container mx-auto px-5 lg:px-10 2xl:px-40 pt-32 2xl:pt-48 pb-10 lg:mt-10 bg-gradient-to-b from-yellow-light to-yellow lg:rounded-t-3xl">
     <div class="mt-10">
         <h1 class="flex flex-col items-center font-sofia text-center">
             <span

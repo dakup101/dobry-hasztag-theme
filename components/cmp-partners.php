@@ -10,7 +10,7 @@
          alt="Partnerzy"
          class="absolute h-1/6 -bottom-5 left-48 lg:left-60">
 
-    <img src="<?php echo IMG . "partnerzy_jezyk.png" ?>"
+    <img src="<?php echo IMG . "zamiennik-kwasa.png" ?>"
          alt="Partnerzy"
          class="absolute h-2/3 bottom-10 left-5 sm:left-10 lg:left-20 opacity-50 md:opacity-80">
 

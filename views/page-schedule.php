@@ -1,7 +1,7 @@
 <?php /* Template Name: Kalendarz */ 
 get_header("cyan") ?>
 
-<section class="bg-cyan-dark mt-10">
+<section class="bg-cyan-dark lg:mt-10">
     <div class="container mx-auto px-5 lg:px-10 2xl:px-16 pt-32 2xl:pt-48 pb-10 bg-cyan lg:rounded-t-3xl">
 
         <h1

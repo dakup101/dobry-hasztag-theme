@@ -55,7 +55,7 @@
                         'content' => file_get_contents(IMG . "menu.svg"),
                         'type' => 'button',
                         'class' => 'rounded-full p-3 mobile-nav-btn',
-                        'class_wrapper' => 'before:rounded-full',
+                        'class_wrapper' => 'xl:hidden before:rounded-full',
                         'dataset' => array(
                             'data-mobile-nav-open' => ''
                         )
