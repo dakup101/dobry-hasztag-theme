@@ -1,5 +1,5 @@
 <div class="neo-before mb-1.5 mr-1.5">
-    <div class="relative bg-yellow-lighter px-10 py-5 rounded-xl border-4 border-dark">
+    <div class="relative bg-yellow-lighter px-5 md:px-10 py-5 rounded-xl border-4 border-dark">
         <h2 class="text-lg uppercase font-bold mb-10">Wiadomości</h2>
         <div class=""
              data-fetched-articles>
