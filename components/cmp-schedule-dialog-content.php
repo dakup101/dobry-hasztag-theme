@@ -12,7 +12,7 @@ $has_gallery = !empty(get_field("gallery", $post_id));
     <?php endif; ?>
 
     <div
-         class=" <?php echo $has_img ? "col-span-2" : "" ?> <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-1" : "order-2" ?>">
+         class=" <?php echo $has_img ? "col-span-3 md:col-span-2" : "" ?> <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-1" : "order-2" ?>">
         <div class="flex">
             <div class="flex-col font-sofia">
                 <div class="text-rose">

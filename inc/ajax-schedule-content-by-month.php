@@ -42,7 +42,7 @@ function ajax_schedule_content_by_month_content($firstDay, $lastDay){
 <p class="text-center uppercase text-4xl mb-10 block w-full font-sofia text-shadow-rose-md">
     <?php echo  get_month_in_pl_by_number($date_obj->format("m")) . " " . $date_obj->format("Y") ?></p>
 
-<div class="columns-2 gap-10">
+<div class="columns-1 xl:columns-2 gap-10">
 
     <?php
     

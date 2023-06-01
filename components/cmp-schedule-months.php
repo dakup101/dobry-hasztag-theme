@@ -11,8 +11,8 @@ if (!empty($months)) : ?>
          get_template_part( CMP, "btn", array(
             "type" => "button", 
             "content" => get_month_in_pl_by_number($month_arr[0]) . " " . $month_arr[1], 
-            "class" => "hover:bg-yellow focus:bg-yellow",
-            "class_wrapper" => "mb-1.5 mr-1.5",
+            "class" => "hover:bg-yellow focus:bg-yellow w-full text-center",
+            "class_wrapper" => "mb-1.5 mr-1.5 w-full",
             "dataset" => array(
                 "data-start" => $days[0],
                 "data-end" => $days[1],
