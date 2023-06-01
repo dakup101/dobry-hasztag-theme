@@ -62,5 +62,6 @@ $has_gallery = !empty($parsed["gallery"]);
         "key" => $args["key"],    
         "gallery" => $parsed["gallery"],
     )) ?>
+
 </div>
 <?php endif; ?>

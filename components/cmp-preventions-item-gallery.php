@@ -16,7 +16,7 @@ function randomFigureHeight(){
 
 <div class="max-h-96 overflow-y-auto pr-14 the-gallery"
      data-simplebar>
-    <div class="columns-3 gap-7 relative">
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-7 relative">
         <?php foreach ($args["gallery"] as $el) : ?>
         <a href="<?php echo wp_get_attachment_image_url($el["img"], "full") ?>"
            class="neo-before mr-1.5 break-inside-avoid-column block h-screen relative mb-7 glightbox

@@ -1,4 +1,4 @@
-<article>
+<article class="col-span-4 sm:col-span-2 lg:col-span-1">
     <div class="neo-before">
         <a href="<?php echo get_permalink(); ?>"
            class="block relative w-full h-screen max-h-64 overflow-hidden rounded-xl border-4 border-dark hover:border-rose hover:translate-x-1.5 hover:translate-y-1.5 transition-all">

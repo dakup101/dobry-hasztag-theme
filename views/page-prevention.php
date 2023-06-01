@@ -6,13 +6,13 @@ get_header() ?>
         <span
               class="block text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-shadow"><?php echo get_the_title() ?></span>
     </h1>
-    <div class="grid grid-cols-4 mt-20 gap-10">
-        <div class="col-span-3 order-last">
+    <div class="grid grid-cols-12 mt-20 gap-y-10 lg:gap-10">
+        <div class="col-span-12 lg:col-span-8 xl:col-span-9 order-last">
             <div class="grid gap-y-10">
                 <?php get_template_part( CMP, "preventions" ) ?>
             </div>
         </div>
-        <aside class="order-first">
+        <aside class="col-span-12 lg:col-span-4 xl:col-span-3 order-first">
             <?php get_template_part( CMP, "tel-numbers" ) ?>
         </aside>
 
