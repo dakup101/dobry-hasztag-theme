@@ -10,7 +10,7 @@ get_header() ?>
         </span>
     </h1>
 
-    <div class="mt-20">
+    <div class="mt-10 md:mt-20">
         <div class="opacity-0"
              data-simplebar></div>
         <?php get_template_part( CMP, "contact-buttons" ) ?>
