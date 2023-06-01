@@ -14,13 +14,14 @@ $has_gallery = !empty($parsed["gallery"]);
 <div class="grid grid-cols-3 gap-12">
     <?php endif; ?>
 
-    <article class="neo-before mb-1.5 mr-1.5 
-            <?php echo $has_img ? "col-span-2" : "" ?> 
-            <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-first" : "order-last" ?>">
+    <article
+             class="neo-before mb-1.5 mr-1.5 
+            <?php echo $has_img ? "col-span-3 md:col-span-2" : "" ?> 
+            <?php  if ($has_img) echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-first" : "order-first md:order-last" ?>">
         <section class="relative bg-yellow rounded-xl border-4 border-dark px-5 py-5">
             <div class="flex">
                 <div class="flex-col font-sofia">
-                    <h3 class="text-6xl text-shadow-rose-md">
+                    <h3 class="text-3xl lg:text-4xl xl:text-6xl text-shadow-rose-md">
                         <?php echo $parsed["title"] ?>
                     </h3>
 
@@ -31,20 +32,20 @@ $has_gallery = !empty($parsed["gallery"]);
             </div>
 
             <?php if ($args["key"] == 0 ) : ?>
-            <figure class="relative pl-40 overflow-hidden mt-10">
+            <figure class="relative sm:pl-40 overflow-hidden mt-10">
                 <img src="<?php echo IMG . "stopka_reka-right.png" ?>"
                      alt="#dobryhasztag"
-                     class="absolute w-40 top-5 -left-5 animate-cut-to-right">
+                     class="absolute w-40 top-5 -left-5 animate-cut-to-right hidden sm:block">
 
-                <h3 class="font-bold text-3xl">
+                <h3 class="font-bold text-xl md:text-3xl">
                     #dobryhasztag
                 </h3>
-                <span class="text-2xl font-bold mt-2 block">
+                <span class="text-xl md:text-2xl font-bold mt-2 block">
                     dla dzieci w kryzysie
                 </span>
                 <a href="#"
                    target="_blank"
-                   class="text-2xl font-bold underline">
+                   class="text-xl md:text-2xl font-bold underline">
                     www.zrzutka.pl
                 </a>
             </figure>

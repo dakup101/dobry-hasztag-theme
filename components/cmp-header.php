@@ -14,8 +14,10 @@
                  class="h-full w-auto max-h-20 xl:max-h-24 2xl:max-h-32">
             <?php endif; ?>
         </a>
+
         <nav class="hidden xl:block">
             <ul class="flex list-none">
+
                 <?php $menu = get_menu("primary"); 
                 $menus_count = count($menu['menus']) - 1;
                 $menus_key = 0;
@@ -33,20 +35,32 @@
             </ul>
         </nav>
         <nav>
-            <ul class="hidden sm:flex list-none">
+            <ul class="flex items-center list-none">
                 <?php $social = get_field("opt_social", "options"); 
                 $social_count = count($social) - 1;
                 $social_key = 0;
                 foreach($social as $el) : ?>
-                <li class="<?php echo $social_key < $social_count ? 'mr-4' : '' ?>">
+                <li class="mr-4 hidden sm:block">
                     <?php get_template_part( CMP, "btn", array(
                         'content' => file_get_contents($el['icon']),
                         'url' => $el['url'],
                         'class' => 'rounded-full bg-white p-2 2xl:p-3',
-                        'class_wrapper' => 'before:rounded-full'
+                        'class_wrapper' => ' before:rounded-full'
                     )) ?>
                 </li>
                 <?php $social_key++; endforeach; ?>
+
+                <li>
+                    <?php get_template_part( CMP, "btn", array(
+                        'content' => file_get_contents(IMG . "menu.svg"),
+                        'type' => 'button',
+                        'class' => 'rounded-full p-3 mobile-nav-btn',
+                        'class_wrapper' => 'before:rounded-full',
+                        'dataset' => array(
+                            'data-mobile-nav-open' => ''
+                        )
+                    )) ?>
+                </li>
             </ul>
         </nav>
     </div>

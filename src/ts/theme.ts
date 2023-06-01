@@ -9,9 +9,10 @@ import partnersSlider_handle from "./handlers/partners-slider-handle";
 import lightbox_handle from "./handlers/lightbox-handle";
 import articlesPagination_handle from "./handlers/articles-pagination";
 import scheduleItemGallery_handle from "./handlers/schedule-item-gallery-handle";
-import contactDialogs from "./functions/contact-dialogs";
 
 import fetchScheduleItemsByMonth from "./functions/fetch-schedule-items-by-month";
+import mobileNav from "./functions/mobile-nav";
+import contactDialogs from "./functions/contact-dialogs";
 
 window.addEventListener("DOMContentLoaded", async () => {
 	simplebar_handle();
@@ -27,5 +28,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 	scheduleItemGallery_handle();
 
 	fetchScheduleItemsByMonth();
+	mobileNav();
+	contactDialogs();
 	contactDialogs();
 });

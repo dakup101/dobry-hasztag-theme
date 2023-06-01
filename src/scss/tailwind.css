@@ -13,6 +13,9 @@
 	.btn svg {
 		@apply w-5 h-5 fill-current;
 	}
+	.btn.mobile-nav-btn svg {
+		@apply w-7 h-7;
+	}
 	.btn-wrapper {
 		@apply relative w-fit h-fit
 		before:absolute before:w-full before:h-full before:bg-dark before:rounded-xl before:top-1.5 before:left-1.5;
