@@ -3,7 +3,7 @@
     <?php $social = get_field("opt_social", "options") ?>
     <div class="neo-before">
         <div class="bg-white relative rounded-xl border-dark border-4 overflow-hidden">
-            <div class="bg-yellow px-5 py-2 border-b-4 border-dark flex items-center justify-between">
+            <div class="bg-yellow pl-5 pr-1 py-2 border-b-4 border-dark flex items-center justify-between">
                 <span class="font-bold font-sofia text-xl">Wydarzenie</span>
                 <button class="text-dark hover:text-rose w-10 h-10">
                     <svg clip-rule="evenodd"
