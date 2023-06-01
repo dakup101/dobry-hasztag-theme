@@ -21,10 +21,12 @@
                 $menus_key = 0;
                 foreach($menu["menus"] as $el) : ?>
                 <li class="<?php echo $menus_key < $menus_count ? 'mr-5 2xl:mr-8' : '' ?>">
-                    <?php get_template_part( CMP, "btn", array(
+                    <?php 
+                    $active = !empty($el['active']) ? 'bg-yellow translate-x-1.5 translate-y-1.5 events-none' : '';
+                    get_template_part( CMP, "btn", array(
                         'content' => $el['title'],
                         'url' => $el['url'],
-                        'class' => 'text-base 2xl:text-lg' . (!empty($el['active']) ? 'bg-yellow translate-x-1.5 translate-y-1.5 events-none' : ''), 
+                        'class' => 'text-base 2xl:text-lg' . ' ' . $active, 
                     )) ?>
                 </li>
                 <?php $menus_key++; endforeach; ?>
