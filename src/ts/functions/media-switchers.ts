@@ -1,6 +1,8 @@
 import fetchMediaContent from "./fetch-media-content";
 import fetchedMediaHeight from "./fetched-media-height";
 
+import mediaDialogs from "./media-dialogs";
+
 export default function mediaSwitchers() {
 	console.log("--- Media Switchers Loaded ---");
 
@@ -33,11 +35,48 @@ export default function mediaSwitchers() {
 
 			let posts = await fetchMediaContent(posts_type);
 
+			fetchTarget.innerHTML = posts;
+
 			if (posts) {
-				fetchTarget.innerHTML = posts;
-				skeleton.style.display = "none";
-				fetchTarget.style.display = "block";
+				setTimeout(() => {
+					skeleton.style.display = "none";
+					fetchTarget.style.display = "block";
+				}, 1500);
 			}
+
+			const postsDialog = fetchTarget.querySelector(
+				"dialog"
+			) as HTMLDialogElement;
+
+			postsDialog.querySelector("button").addEventListener("click", (ev) => {
+				ev.preventDefault();
+
+				const postDialogIframe = postsDialog.querySelector(
+					"iframe"
+				) as HTMLIFrameElement;
+				if (postDialogIframe) {
+					postDialogIframe.src = "";
+				}
+				postsDialog.close();
+			});
+
+			const postsBtns = fetchTarget.querySelectorAll(
+				"[data-fetched-play]"
+			) as NodeListOf<HTMLButtonElement>;
+
+			postsBtns.forEach((play) => {
+				console.log(play);
+
+				const mediaSrc = play.getAttribute("data-fetched-play-src");
+				const mediaContent = play.getAttribute("data-fetched-play");
+
+				console.log(mediaSrc, mediaContent);
+
+				play.addEventListener("click", (ev) => {
+					ev.preventDefault();
+					mediaDialogs(mediaSrc, mediaContent);
+				});
+			});
 		});
 		el.classList.remove("disabled");
 		if (key == 0) el.click();

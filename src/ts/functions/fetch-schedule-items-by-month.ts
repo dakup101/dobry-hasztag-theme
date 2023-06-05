@@ -48,8 +48,10 @@ export default function fetchScheduleItemsByMonth() {
 
 				scheduleDialog();
 
-				skeleton.classList.add("hidden");
-				scheduleEventsWrapper.classList.remove("hidden");
+				setTimeout(() => {
+					skeleton.classList.add("hidden");
+					scheduleEventsWrapper.classList.remove("hidden");
+				}, 1500);
 			});
 
 			if (key == 0) date.click();

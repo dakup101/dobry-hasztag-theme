@@ -12,11 +12,11 @@
 
     <img src="<?php echo IMG . "zamiennik-kwasa.png" ?>"
          alt="Partnerzy"
-         class="absolute h-2/3 bottom-10 left-5 sm:left-10 lg:left-20 opacity-50 md:opacity-80">
+         class="absolute h-2/3 bottom-10 left-5 sm:left-10 lg:left-20 opacity-50 md:opacity-40">
 
     <img src="<?php echo IMG . "partnerzy05_03.png" ?>"
          alt="Partnerzy"
-         class="absolute h-1/4 top-20 right-5 sm:right-10 opacity-50 md:opacity-80">
+         class="absolute h-1/4 top-20 right-5 sm:right-10 opacity-50 md:opacity-40">
 
 
     <div class="container mx-auto relative">

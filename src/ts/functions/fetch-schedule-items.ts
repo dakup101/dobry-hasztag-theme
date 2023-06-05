@@ -48,14 +48,16 @@ export default function fetchScheduleItems() {
 						return text;
 					});
 
-				scheduleEventsWrapper.innerHTML = events;
-				scheduleSkeleton.classList.add("hidden");
+				setTimeout(() => {
+					scheduleEventsWrapper.innerHTML = events;
+					scheduleSkeleton.classList.add("hidden");
 
-				// Events Galleries
-				scheduleItemsGallerySlider();
+					// Events Galleries
+					scheduleItemsGallerySlider();
 
-				scheduleDatesWrapper.classList.remove("opacity-80");
-				scheduleDatesWrapper.classList.remove("pointer-events-none");
+					scheduleDatesWrapper.classList.remove("opacity-80");
+					scheduleDatesWrapper.classList.remove("pointer-events-none");
+				}, 1500);
 			});
 
 			if (key == 0) date.click();

@@ -37,4 +37,6 @@ $ig_normal = new WP_Query(array(
     ?>
 </div>
 
+<?php get_template_part( CMP, "media-ig-dialog" ) ?>
+
 <?php endif; ?>

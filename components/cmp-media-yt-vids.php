@@ -37,4 +37,6 @@ $yt_normal = new WP_Query(array(
     ?>
 </div>
 
+<?php get_template_part( CMP, "media-yt-dialog" ) ?>
+
 <?php endif; ?>

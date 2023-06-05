@@ -6,7 +6,7 @@
                 <img src="<?php the_field("preview") ?>"
                      alt="<?php echo get_the_title() ?>">
             </figure>
-            <button data-fetched-play="<?php the_field("id") ?>"
+            <button data-fetched-play="<?php the_field("preview") ?>"
                     data-fetched-play-src="ig">
                 <?php echo file_get_contents(IMG . "search.svg") ?>
             </button>
