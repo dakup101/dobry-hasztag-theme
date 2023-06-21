@@ -1,5 +1,5 @@
 {
-  "name": "dobry-hasztag",
+  "name": "dobry-hasztag-theme",
   "version": "1.0.0",
   "description": "WP Plugin by Everywhere",
   "main": "/src/ts/theme.ts",
