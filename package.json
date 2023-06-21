@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "npm-run-all --parallel webpack-watch tailwind-watch scss-watch",
     "build": "npm-run-all webpack tailwind scss",
-    "webpack": "webpack",
-    "webpack-watch": "webpack watch",
+    "webpack": "webpack --config webpack.config.prod.js",
+    "webpack-watch": "webpack --config webpack.config.dev.js --watch",
     "scss": "sass ./src/scss/theme.scss ./dist/css/theme.css",
     "scss-watch": "sass ./src/scss/theme.scss ./dist/css/theme.css -w",
     "tailwind": "tailwind -i ./src/scss/tailwind.css -o ./dist/css/tailwind.css",
