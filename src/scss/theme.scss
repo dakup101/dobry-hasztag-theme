@@ -29,12 +29,10 @@
 
 .text-stroke {
 	&-rose {
-		text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose,
-			2px 2px 0 $rose;
+		text-shadow: -2px -2px 0 $rose, 2px -2px 0 $rose, -2px 2px 0 $rose, 2px 2px 0 $rose;
 	}
 	&-dark {
-		text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark,
-			2px 2px 0 $dark;
+		text-shadow: -2px -2px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark, 2px 2px 0 $dark;
 	}
 }
 
@@ -233,4 +231,39 @@ dialog {
 	@media (min-width: 1240px) {
 		display: block;
 	}
+}
+
+.fake-label {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.wpcf7-form-control.wpcf7-radio {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+}
+
+.wpcf7-form-control.wpcf7-radio > span {
+	margin: 0;
+}
+
+.wpcf7-form-control.wpcf7-radio label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.wpcf7-form-control.wpcf7-radio label input {
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+}
+
+.wpcf7-form-control.wpcf7-radio label span {
+	margin: 0;
 }
