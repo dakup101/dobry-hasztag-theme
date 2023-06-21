@@ -8,7 +8,7 @@ get_header() ?>
             <h1 class="text-4xl font-sofia text-shadow-md">
                 <?php echo get_the_title() ?>
             </h1>
-            <div class="mt-5">
+            <div class="mt-5 text-content">
                 <?php echo wpautop(get_the_content()) ?>
             </div>
         </div>
@@ -16,6 +16,5 @@ get_header() ?>
 </section>
 
 <?php get_template_part( CMP, "social-marquee" ) ?>
-<?php get_template_part( CMP, "share-us" ) ?>
 
 <?php get_footer() ?>

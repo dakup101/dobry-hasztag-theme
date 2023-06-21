@@ -267,3 +267,19 @@ dialog {
 .wpcf7-form-control.wpcf7-radio label span {
 	margin: 0;
 }
+
+.text-content {
+	p,
+	li,
+	ul,
+	ol {
+		margin-bottom: 0.75rem;
+	}
+	ul {
+		list-style: disc;
+	}
+	ol {
+		list-style: decimal;
+		padding-left: 1.25em;
+	}
+}
