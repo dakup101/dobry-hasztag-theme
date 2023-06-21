@@ -9,3 +9,5 @@
 /.gitattributes
 /package-lock.json
 .env
+
+*.zip
