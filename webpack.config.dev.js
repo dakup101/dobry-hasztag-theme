@@ -2,6 +2,8 @@ const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 
 module.exports = {
     entry: './src/ts/theme',
@@ -41,6 +43,9 @@ module.exports = {
         path: path.resolve(__dirname, './dist/js'),
     },
     plugins: [
-        new Dotenv()
+        new Dotenv(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, './dist/js')],
+          }),
     ]
 };
