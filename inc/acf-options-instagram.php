@@ -100,6 +100,8 @@ function instagram_post_fill($post_id, $data){
     update_field("is_imported", true, $post_id);
     update_field("id", $data["id"], $post_id);
     update_field("preview", $data["thumbnail"], $post_id);
+	    update_field("media_type", $data["mediaType"], $post_id);
+
 
     $date_str = $data["publishDate"];
     $date = new DateTime($date_str);
@@ -114,7 +116,7 @@ function instagram_post_fill($post_id, $data){
 
 // Get an Ojbect with needed instagram Videos info
 function fetchInstagramVids() {
-    $access_token = get_field("instagram_api_token", "options");
+    $access_token = "IGQVJYZAUVhcDlBcVMyZAEhIMFVVaHVFVE1fZAmhjcmQ0azFOX0xiRE1wdHhqdkZArc1owMUdTaU1oVXBydDNLNVh1V3FGYmxienJvVXNzcFdfWDRTYUpYSTFQM1NpeTlQWlhlQUd1aEthdmsyWERUTVNRegZDZD";
     $how_much = get_field("instagram_api_amount", "options");
     $profile = get_field("instagram_api_profile", "options");
     $username = get_field("instagram_api_username", "options");
@@ -132,7 +134,9 @@ function fetchInstagramVids() {
     curl_close($curl);
 
     $data = json_decode($response, true);
-
+	
+// 	return $response;
+	
     $posts = array();
     $count = 0;
     foreach ($data['data'] as $photo) {
@@ -146,12 +150,11 @@ function fetchInstagramVids() {
             "thumbnail" => $thumbnail_url,
             "publishDate" => $photo['timestamp'],
             "authorProfileLink" => $profile,
-            "authorName" => $username
+            "authorName" => $username,
+			"mediaType" => $photo["media_type"],
         );
-        if ($photo["media_type"] == "IMAGE"){
-            array_push($posts, $post);
-            $count++;
-        }
+		$count++;
+        array_push($posts, $post);
         if ($count === $how_much) {
             break;
         }

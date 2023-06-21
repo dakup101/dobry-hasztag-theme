@@ -32,19 +32,19 @@
 </div>
 
 <?php get_template_part( CMP, "contact-dialog", array(
-    "shortcode" => '[contact-form-7 id="1652" title="Formularz 1"]',
+    "shortcode" => '[contact-form-7 id="1652" title="Chcesz zgłosić szkołę do programu?"]',
     "title" => "Zgłoś szkołę",
     "form" => "school",
 ) ) ?>
 
 <?php get_template_part( CMP, "contact-dialog", array(
-    "shortcode" => '[contact-form-7 id="1652" title="Formularz 1"]',
+    "shortcode" => '[contact-form-7 id="5065" title="Jestem osobą znaną i chcę wziąć udział!"]',
     "title" => "Dołącz",
     "form" => "join",
 ) ) ?>
 
 <?php get_template_part( CMP, "contact-dialog", array(
-    "shortcode" => '[contact-form-7 id="1652" title="Formularz 1"]',
+    "shortcode" => '[contact-form-7 id="5067" title="Wesprzyj nas!"]',
     "title" => "Wesprzyj",
     "form" => "help",
 ) ) ?>

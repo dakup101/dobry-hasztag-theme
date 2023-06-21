@@ -4,12 +4,8 @@ export default function articlesPagination() {
 	console.log("--- Articles Pagination Loaded ---");
 
 	const articlesWrapper = document.querySelector("[data-fetched-articles]");
-	const paginationBtnsWrapper = document.querySelector(
-		"[data-posts-pagination]"
-	);
-	const paginationBtns = paginationBtnsWrapper.querySelectorAll(
-		"button"
-	) as NodeListOf<HTMLButtonElement>;
+	const paginationBtnsWrapper = document.querySelector("[data-posts-pagination]");
+	const paginationBtns = paginationBtnsWrapper.querySelectorAll("button") as NodeListOf<HTMLButtonElement>;
 
 	paginationBtns.forEach((btn, key) => {
 		btn.addEventListener("click", async (ev) => {
@@ -37,8 +33,6 @@ export default function articlesPagination() {
 			data.append("action", "articles_pagination");
 			data.append("page", page);
 			data.append("perPage", perPage);
-
-			console.log(data);
 
 			if (category) data.append("category", category);
 			if (blog_item) data.append("blog_item", blog_item);

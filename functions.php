@@ -50,3 +50,10 @@ require_once(FUN . "ajax-schedule-content.php");
 require_once(FUN . "ajax-schedule-content-by-month.php");
 require_once(FUN . "ajax-articles-pagination.php");
 require_once(FUN . "ajax-event-content.php");
+
+
+add_filter( 'wp_mail_from_name', 'change_sender_name' );
+function change_sender_name( $name ) {
+    $name = 'Dobry#';
+    return $name;
+}

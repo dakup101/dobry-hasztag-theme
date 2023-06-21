@@ -6,12 +6,12 @@
                  class="absolute h-40 top-0 lg:-top-5 left-10 md:left-0 animate-cut-to-right">
 
             <h3 class="font-bold text-3xl">
-                #dobryhasztag
+                Bądź częścią Wielkiej Wyprawy Maluchów
             </h3>
             <span class="text-2xl font-bold mt-2 block">
-                dla dzieci w kryzysie
+                 i razem z nami pomóż dzieciom, ofiarom wypadków drogowych!
             </span>
-            <a href="#"
+            <a href="https://zrzutka.pl/wielkawyprawamaluchow?fbclid=IwAR012OfzMbTD5YWzZjfUS1wJM6u2rTVME9XRZWaR8gZ4enVx31pHTAijVIQ"
                target="_blank"
                class="text-2xl font-bold underline">
                 www.zrzutka.pl
@@ -62,13 +62,13 @@
                 <div class="col-span-1 sm:col-span-1 ">
                     <h3 class="text-2xl font-bold mb-1">Kontakt</h3>
                     <span class="uppercase">
-                        ul. JÓZEFA MARCINKA 4<br>
+                        ul. JÓZEFA MARCIKA 4<br>
                         30-443 KRAKÓW<br>
                         MAŁOPOLSKIE
                     </span>
                     <div class="mt-10">
-                        <a href="mailto:kontakt@ttage.pl"
-                           class="font-bold underline block w-fit mb-1">kontakt@ttage.pl</a>
+                        <a href="mailto:kontakt@dobryhasztag.pl"
+                           class="font-bold underline block w-fit mb-1">kontakt@dobryhasztag.pl</a>
                         <a href="tel:+48793793900"
                            class="font-bold underline bloc w-fit">+48 793 793 900</a>
                     </div>

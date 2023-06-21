@@ -24,6 +24,8 @@
                      class="max-w-full max-h-full h-full"
                      style="max-height: 75vh"
                      alt="">
+				<video controls class="aspect-video w-full h-auto">
+				</video>
             </div>
         </div>
     </div>

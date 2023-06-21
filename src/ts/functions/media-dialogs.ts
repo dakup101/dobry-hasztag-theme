@@ -1,9 +1,5 @@
-export default function mediaDialogs(mediaSrc, mediaContent) {
-	const dialog = document.querySelector(
-		"[data-media-dialog='" + mediaSrc + "']"
-	) as HTMLDialogElement;
-
-	console.log([mediaSrc, mediaContent]);
+export default function mediaDialogs(mediaSrc, mediaContent, mediaType = "") {
+	const dialog = document.querySelector("[data-media-dialog='" + mediaSrc + "']") as HTMLDialogElement;
 
 	if (!dialog) return;
 
@@ -30,8 +26,15 @@ export default function mediaDialogs(mediaSrc, mediaContent) {
 
 		case "ig": {
 			const igImg = dialog.querySelector("img");
-			igImg.setAttribute("src", mediaContent);
-			console.log(igImg);
+			const igVideo = dialog.querySelector("video") as HTMLVideoElement;
+
+			if (mediaType == "VIDEO") {
+				igVideo.style.display = "block";
+				igVideo.src = mediaContent + "#t=0.1";
+			} else {
+				igImg.style.display = "block";
+				igImg.setAttribute("src", mediaContent);
+			}
 			break;
 		}
 	}

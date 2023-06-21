@@ -14,3 +14,7 @@ Tags:
 ttage-theme WordPress Theme, Copyright 2021 Danylo Kupriienko (Everywhere Studio)
 ttage-theme is distributed under the terms of the GNU General Public License v3
 */
+
+dialog iframe img{
+	margin: 0 auto;
+}

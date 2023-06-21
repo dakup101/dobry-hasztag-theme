@@ -9,12 +9,8 @@ export default function mediaSwitchers() {
 	// Set fixed height for media content wrapper
 	fetchedMediaHeight();
 
-	const skeleton = document.querySelector(
-		"[data-fetched-skeleton]"
-	) as HTMLElement;
-	const fetchTarget = document.querySelector(
-		"[data-fetched-media]"
-	) as HTMLElement;
+	const skeleton = document.querySelector("[data-fetched-skeleton]") as HTMLElement;
+	const fetchTarget = document.querySelector("[data-fetched-media]") as HTMLElement;
 
 	const switchers = document.querySelectorAll("[data-media-switcher]");
 	Array.from(switchers).forEach((el: HTMLButtonElement, key: number) => {
@@ -44,37 +40,44 @@ export default function mediaSwitchers() {
 				}, 1500);
 			}
 
-			const postsDialog = fetchTarget.querySelector(
-				"dialog"
-			) as HTMLDialogElement;
+			const postsDialog = fetchTarget.querySelector("dialog") as HTMLDialogElement;
 
 			postsDialog.querySelector("button").addEventListener("click", (ev) => {
 				ev.preventDefault();
 
-				const postDialogIframe = postsDialog.querySelector(
-					"iframe"
-				) as HTMLIFrameElement;
+				const postDialogIframe = postsDialog.querySelector("iframe") as HTMLIFrameElement;
+
+				const postDialogVidep = postsDialog.querySelector("video") as HTMLVideoElement;
+
+				const postDialogImg = postsDialog.querySelector("img") as HTMLElement;
+
 				if (postDialogIframe) {
 					postDialogIframe.src = "";
 				}
+
+				if (postDialogVidep) {
+					postDialogVidep.src = "";
+					postDialogVidep.style.display = "none";
+				}
+
+				if (postDialogImg) {
+					postDialogImg.style.display = "none";
+				}
+
 				postsDialog.close();
 			});
 
-			const postsBtns = fetchTarget.querySelectorAll(
-				"[data-fetched-play]"
-			) as NodeListOf<HTMLButtonElement>;
+			const postsBtns = fetchTarget.querySelectorAll("[data-fetched-play]") as NodeListOf<HTMLButtonElement>;
 
 			postsBtns.forEach((play) => {
-				console.log(play);
-
 				const mediaSrc = play.getAttribute("data-fetched-play-src");
 				const mediaContent = play.getAttribute("data-fetched-play");
-
-				console.log(mediaSrc, mediaContent);
+				const mediaType = play.getAttribute("data-media-type") || null;
 
 				play.addEventListener("click", (ev) => {
 					ev.preventDefault();
-					mediaDialogs(mediaSrc, mediaContent);
+
+					mediaDialogs(mediaSrc, mediaContent, mediaType);
 				});
 			});
 		});
