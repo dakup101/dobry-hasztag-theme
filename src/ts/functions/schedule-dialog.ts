@@ -7,17 +7,11 @@ const eventLoader =
 	"</div>";
 
 export default function scheduleDialog() {
-	const triggers = document.querySelectorAll(
-		"[data-event-id]"
-	) as NodeListOf<HTMLButtonElement>;
+	const triggers = document.querySelectorAll("[data-event-id]") as NodeListOf<HTMLButtonElement>;
 
-	const dialog = document.querySelector(
-		"[data-schedule-dialog]"
-	) as HTMLDialogElement;
+	const dialog = document.querySelector("[data-schedule-dialog]") as HTMLDialogElement;
 
-	const dialogContent = dialog.querySelector(
-		"[data-event-content]"
-	) as HTMLElement;
+	const dialogContent = dialog.querySelector("[data-event-content]") as HTMLElement;
 
 	const dialogClose = dialog.querySelector("button") as HTMLButtonElement;
 

@@ -73,4 +73,16 @@ $has_gallery = !empty(get_field("gallery", $post_id));
 </div>
 <?php endif; ?>
 
+
+
+<?php $gallery_2 = get_field("gallery_2", $post_id); ?>
+
+<?php if (!empty($gallery_2["gallery"])) : ?>
+
+<div class="mt-10 schedule-item-gallery-big">
+    <?php  get_template_part( CMP, "preventions-item-gallery", $gallery_2 ); ?>
+</div>
+
+<?php endif; ?>
+
 <?php wp_reset_postdata(); ?>

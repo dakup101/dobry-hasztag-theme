@@ -1,5 +1,5 @@
 <dialog data-schedule-dialog
-        class="max-w-5xl w-full">
+        class="max-w-7xl  w-full">
     <?php $social = get_field("opt_social", "options") ?>
     <div class="neo-before">
         <div class="bg-white relative rounded-xl border-dark border-4 overflow-hidden">
