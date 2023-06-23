@@ -27,7 +27,7 @@
 <div class="mt-10 flex justify-center">
     <?php get_template_part( CMP, "btn", array(
         'content' => "Sprawdź pełny harmonogram",
-        'url' => "#",
+        'url' => "/kalendarz/",
         'class' => "hover:bg-yellow"
     )) ?>
 </div>

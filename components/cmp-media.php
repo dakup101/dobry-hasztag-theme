@@ -8,9 +8,9 @@
             </figure>
             <div class="div">
                 <h2 class="text-xl font-bold">#dobryhasztag w Social Media</h2>
-                <p>
+<!--                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
+                </p> -->
             </div>
         </div>
         <?php get_template_part( CMP, "btn", array(

@@ -1,4 +1,4 @@
-<?php /* Template Name: Blog (Archiwua) */ 
+<?php /* Template Name: Blog (Archiwa) */ 
 get_header() ?>
 
 <section

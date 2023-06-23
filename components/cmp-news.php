@@ -38,7 +38,7 @@
 
     <?php endif; ?>
 
-    <a href="#"
+    <a href="/news/"
        class="text-xl underline text-rose hover:text-cyan font-bold font-archio block mt-10 text-center md:text-left">Przeczytaj
         wszystkie wiadomości</a>
 

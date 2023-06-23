@@ -1,7 +1,7 @@
 <section class="bg-dark mt-10 py-5 text-yellow">
     <div class="container mx-auto grid grid-cols-3 items-center gap-5">
         <div class="col-span-3 md:col-span-1 flex justify-center md:justify-start items-center">
-            <a href="#"
+            <a href="/polityka-prywatnosci/"
                class="hover:text-rose">Polityka Prywatności</a>
         </div>
         <div class="col-span-3 md:col-span-1 flex justify-center items-center text-center opacity-70">

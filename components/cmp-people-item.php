@@ -11,6 +11,7 @@
                 <?php echo get_field("nickname") ?>
             </span>
             <a href="<?php echo get_field("tt_link") ?>"
+			   target="_blank"
                class="flex items-center justify-center mx-auto mt-5 hover:cursor-pointer hover:text-rose">
                 <span class="font-sofia">
                     Zobacz filmik<br>

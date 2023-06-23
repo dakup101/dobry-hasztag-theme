@@ -45,7 +45,7 @@
                     <h3 class="text-2xl font-bold mb-1">Menu</h3>
                     <nav>
                         <ul class="flex flex-col list-none">
-                            <?php $menu = get_menu("primary"); 
+                            <?php $menu = get_menu("footer"); 
                 $menus_count = count($menu['menus']) - 1;
                 $menus_key = 0;
                 foreach($menu["menus"] as $el) : ?>
