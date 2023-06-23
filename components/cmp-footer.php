@@ -1,21 +1,31 @@
 <footer class="bg-yellow overflow-hidden">
     <section class="container mx-auto grid grid-cols-6">
+        <?php
+        $charity_1 = get_field("active_charity_1", "options");
+        $charity_2 = get_field("active_charity_2", "options");
+        $charity_link = get_field("active_charity_link", "options");
+        $charity_link_text = get_field("active_charity_link_text", "options");
+        ?>
         <div class="text-center md:text-left col-span-6 sm:col-span-3 lg:col-span-2 order-2 lg:order-1 relative pt-40">
+            <?php if (!empty($charity_1)) : ?>
             <img src="<?php echo IMG . "stopka_reka.png" ?>"
                  alt="#dobryhasztag"
                  class="absolute h-40 top-0 lg:-top-5 left-10 md:left-0 animate-cut-to-right">
 
             <h3 class="font-bold text-3xl">
-                Bądź częścią Wielkiej Wyprawy Maluchów
+                <?php echo $charity_1 ?>
             </h3>
             <span class="text-2xl font-bold mt-2 block">
-                 i razem z nami pomóż dzieciom, ofiarom wypadków drogowych!
+                <?php echo !empty($charity_2) ? $charity_2 : "" ?>
             </span>
-            <a href="https://zrzutka.pl/wielkawyprawamaluchow?fbclid=IwAR012OfzMbTD5YWzZjfUS1wJM6u2rTVME9XRZWaR8gZ4enVx31pHTAijVIQ"
+            <?php if (!empty($charity_link) && !empty($charity_link_text)) : ?>
+            <a href="<?php echo $charity_link ?>"
                target="_blank"
                class="text-2xl font-bold underline">
-                www.zrzutka.pl
+                <?php echo $charity_link_text ?>
             </a>
+            <?php endif; ?>
+            <?php endif; ?>
         </div>
         <div class="col-span-6 lg:col-span-2 order-1 lg:order-2 pt-10 flex flex-col items-center">
             <img src="<?php echo IMG . "logo.png" ?>"

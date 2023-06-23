@@ -1,6 +1,6 @@
 <div class="neo-before w-full mb-1.5 mr-1.5 hover:-translate-y-5 transition-all">
     <div class="relative bg-white rounded-xl overflow-hidden border-4 border-dark">
-        <figure class="h-52 md:h-64 2xl:h-96 border-b-4 border-dark">
+        <figure class="h-64 2xl:h-96 border-b-4 border-dark">
             <img src="<?php echo get_the_post_thumbnail_url() ?>"
                  alt="<?php echo get_the_title(); ?>"
                  class="object-cover w-full h-full">
@@ -11,7 +11,7 @@
                 <?php echo get_field("nickname") ?>
             </span>
             <a href="<?php echo get_field("tt_link") ?>"
-			   target="_blank"
+               target="_blank"
                class="flex items-center justify-center mx-auto mt-5 hover:cursor-pointer hover:text-rose">
                 <span class="font-sofia">
                     Zobacz filmik<br>

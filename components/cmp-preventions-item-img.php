@@ -1,7 +1,7 @@
 <?php $args = wp_parse_args( $args, array() ); ?>
 
 <article class="neo-before mb-1.5 mr-1.5">
-    <div class="relative bg-white border-4 border-dark rounded-xl px-5 xl:px-10 py-5">
+    <div class="relative h-full bg-white border-4 border-dark rounded-xl px-5 xl:px-10 py-5">
         <div class="grid grid-cols-5 gap-10">
             <div
                  class="col-span-5 md:col-span-3 <?php echo $args["img_pos"] == "right" ? "order-first md:order-last" : "order-first" ?>">

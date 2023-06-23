@@ -6,7 +6,7 @@ $event_date = get_field("date");
 <div class="mb-10 break-inside-avoid-column">
     <div class="neo-before mb-1.5 mr-1.5 w-full"
          data-day-events>
-        <div class="bg-white border-4 px-10 py-5 rounded-2xl relative">
+        <div class="bg-white h-full border-4 px-10 py-5 rounded-2xl relative">
             <?php 
                     $format = "Y-m-d H:i:s";
                     $date = get_field("date");
@@ -47,7 +47,16 @@ $event_date = get_field("date");
                     <span> - <?php echo get_field("ends_at") ?></span>
                     <?php endif; ?>
                 </p>
-                <p class="font-sofia font-bold text-lg"><?php echo get_the_title(); ?></p>
+                <p class="font-sofia font-bold text-lg mb-2"><?php echo get_the_title(); ?></p>
+                <?php
+                $excerpt = get_the_excerpt();
+                $excerpt_formatted = (mb_strlen($excerpt, 'UTF-8') > 120) 
+                ? mb_substr($excerpt, 0, 120, 'UTF-8') . "..." 
+                : $excerpt;
+                ?>
+                <p class="">
+                    <?php echo $excerpt_formatted ?>
+                </p>
                 <button class="text-rose font-archio underline text-lg my-2"
                         data-event-id="<?php echo get_the_ID() ?>">Czytaj więcej</button>
                 <img class=" max-h-3 h-full w-auto"

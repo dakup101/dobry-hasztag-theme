@@ -2,7 +2,7 @@
     <div class="col-span-12 md:col-span-9">
         <?php $about = get_field("about"); ?>
         <div class="neo-before mb-1.5 mr-1.5">
-            <div class="relative bg-white px-5 md:px-10 py-6 border-4 rounded-2xl">
+            <div class="relative h-full bg-white px-5 md:px-10 py-6 border-4 rounded-2xl">
                 <h2 class="text-2xl md:text-4xl font-gambado mb-5">
                     <?php echo $about["title"]; ?>
                 </h2>

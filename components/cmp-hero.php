@@ -9,7 +9,7 @@
     <div class="col-span-12 md:col-span-6 md:pl-20 mt-10 md:mt-0">
         <?php $hero_vid = get_field("hero_vid") ?>
         <div class="relative neo-before mb-1.5 mr-1.5">
-            <div class="border-4 border-dark rounded-2xl overflow-hidden bg-yellow relative">
+            <div class="border-4 border-dark rounded-2xl overflow-hidden bg-yellow relative h-full">
                 <div class="border-b-4 px-4 py-2 font-sofia text-xl font-bold">
                     <span>
                         <?php echo $hero_vid["title"] ?>
@@ -34,7 +34,7 @@
     <dialog data-media-dialog='hero'
             class="max-w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl w-full">
         <div class="neo-before">
-            <div class="bg-white relative rounded-xl border-dark border-4 overflow-hidden">
+            <div class="bg-white h-full relative rounded-xl border-dark border-4 overflow-hidden">
                 <div class="bg-yellow pl-5 pr-1 py-2 border-b-4 border-dark flex items-center justify-between">
                     <span class="font-bold font-sofia text-xl">
                         YouTube

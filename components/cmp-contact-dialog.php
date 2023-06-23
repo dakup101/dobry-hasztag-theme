@@ -4,7 +4,7 @@
         class="max-w-xl w-full">
     <?php $social = get_field("opt_social", "options") ?>
     <div class="neo-before">
-        <div class="bg-white relative rounded-xl border-dark border-4 overflow-hidden">
+        <div class="bg-white h-full relative rounded-xl border-dark border-4 overflow-hidden">
             <div class="bg-yellow pl-5 pr-1 py-2 border-b-4 border-dark flex items-center justify-between">
                 <span class="font-bold font-sofia text-xl">
                     <?php echo $args["title"] ?>

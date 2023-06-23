@@ -8,7 +8,7 @@
 
 <div data-schedule-items-skeleton
      class="hidden animate__animated animate__fadeIn">
-    <figure class="neo-before w-full mb-1.5 mr-1.5 transition-all before:bg-gray animate-pulse mt-10">
+    <figure class="neo-before h-full w-full mb-1.5 mr-1.5 transition-all before:bg-gray animate-pulse mt-10">
         <div class="relative bg-gray-light rounded-xl border-4 border-gray px-5 py-5">
             <span class="block w-20 h-6 mb-3 bg-gray"></span>
             <span class="block w-44 h-6 mb-10 bg-gray"></span>

@@ -1,7 +1,7 @@
 <dialog data-media-dialog="ig"
         class="max-w-full md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
     <div class="neo-before">
-        <div class="bg-white relative rounded-xl border-dark border-4 overflow-hidden">
+        <div class="bg-white h-full relative rounded-xl border-dark border-4 overflow-hidden">
             <div class="bg-yellow pl-5 pr-1 py-2 border-b-4 border-dark flex items-center justify-between">
                 <span class="font-bold font-sofia text-xl">
                     Instagram
@@ -24,8 +24,9 @@
                      class="max-w-full max-h-full h-full"
                      style="max-height: 75vh"
                      alt="">
-				<video controls class="aspect-video w-full h-auto">
-				</video>
+                <video controls
+                       class="aspect-video w-full h-auto">
+                </video>
             </div>
         </div>
     </div>
