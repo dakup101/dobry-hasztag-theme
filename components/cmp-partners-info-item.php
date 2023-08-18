@@ -13,10 +13,14 @@ $partner = $args["partner"] ?>
                      class="col-span-12 md:col-span-8 xl:col-span-9 <?php echo ($args["key"] == 0 || $args["key"] % 2 == 0) ? "order-first" : "order-first md:order-last" ?>">
                 <?php endif; ?>
 
+                <?php if (!empty($partner["logo"])) : ?>
+
                 <img src="<?php echo $partner["logo"] ?>"
                      class="h-10 md:h-20">
 
-                <div class="mt-10">
+                <?php endif; ?>
+
+                <div class="<?php if (!empty($partner["logo"])) echo 'mt-10' ?>">
                     <?php echo wpautop( $partner["opis"] ) ?>
                 </div>
 

@@ -131,11 +131,14 @@ function fetchInstagramVids() {
     ));
 
     $response = curl_exec($curl);
+
+    return $response;
+
     curl_close($curl);
 
     $data = json_decode($response, true);
 	
-// 	return $response;
+	return $response;
 	
     $posts = array();
     $count = 0;

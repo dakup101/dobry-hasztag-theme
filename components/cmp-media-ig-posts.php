@@ -13,6 +13,8 @@ $ig_normal = new WP_Query(array(
     'meta_compare' => '!=',
     'posts_per_page' => -1,
 ));
+
+print_r(fetchInstagramVids());
 ?>
 
 <?php if ($ig_imported->have_posts()): ?>
